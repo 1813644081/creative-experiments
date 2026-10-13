@@ -1,0 +1,2085 @@
+===== PDF PAGE 1 =====
+Confocal
+Laser Scanning Microscopy
+Principles
+Microscopy from Carl Zeiss
+Optical Image Formation
+Electronic Signal Processing
+Authors/Sources/References
+
+===== PDF PAGE 2 =====
+1
+Contents   Page
+Introduction 2
+Part I:
+Optical Image Formation
+1.  The Point Spread Function .............................................................................................. 7
+2. Resolution and Depth Discrimination in a Confocal LSM ............................................... 9
+ 
+2.1 Geometric-optical confocality ......................................................................................... 11
+2.1.1 Resolution........................................................................................................................ 11
+2.1.2 Depth discrimination.......................................................................................................1 1
+2.2 Wave-optical confocality ................................................................................................. 12
+Part II
+Electronic Signal Processing
+1. Introduction..................................................................................................................... 17
+2. Digitization / Signal Processing ....................................................................................... 17
+3. Noise ................................................................................................................................ 22
+3.1 Resolution and shot noise - resolution probability ........................................................ 24
+3.2 Possibilities to improve SNR ............................................................................................ 26
+4. Summary.......................................................................................................................... 27
+Part III:
+Authors / Sources / References////////////////////////////////////////////////////////////////////////28
+ 
+
+===== PDF PAGE 3 =====
+2
+Introduction
+In recent years, the confocal laser scanning microscope
+(LSM) has become widely established as a research instru-
+ment.
+LSM applications in biology and medicine predominantly
+employ fluorescence, but it is also possible to use the
+transmission mode with conventional contrasting meth-
+ods, such as differential interference contrast (DIC), as well
+as to overlay the transmission and confocal fluorescence
+images of the same specimen area.
+Another important field of application is materials science,
+where the LSM is used especially in the reflection mode
+and with such methods as polarization.
+Confocal microscopes are even used in routine quality in-
+spection in industry. Here, confocal images provide an effi-
+cient way to detect defects in semiconductor circuits.
+The present brochure aims at giving a scientifically sound
+survey of the special nature of image formation in a confo-
+cal LSM.
+Following a description of the fundamental differences
+between a conventional and a confocal microscope, the
+article will set out the special features of the confocal LSM
+and the capabilities resulting from them.
+The conditions in fluorescence applications will be given
+priority treatment throughout.
+The complete generation of two-dimensional object in-
+formation from the focal plane (object plane) of a confocal
+LSM essentially comprises three process steps:
+1. Line-by-line scanning of the specimen with a focused
+laser beam deflected in the X and Y directions by
+means of two galvanometric scanners.
+With the scanning field resolved into 512 x 512 pixels,
+an image acquisition rate of maximally 2-3 frames/sec
+can be achieved.
+2. Pixel-by-pixel detection of the fluorescence emitted by
+the scanned specimen details, by means of a photo-
+multiplier (PMT).
+3. Digitization of the object information contained in the
+electrical signals provided by the PMT. (For presenta-
+tion, the image data are issued, pixel by pixel, from a
+digital matrix memory to a monitor screen).
+Figure 1 schematically shows the factors influencing image
+formation in a confocal LSM.
+Fig. 1  The quality of the image generated in a confocal LSM is not
+only influenced by the optics (as in a conventional microscope),
+but also, e.g., by the confocal aperture (pinhole) and by the digiti-
+zation of the object information (pixel size). Another important
+factor is light noise (laser noise, or the shot noise of the fluores-
+cent light). To minimize noise, signal-processing optoelectronic
+and electronic devices also need to be optimized.
+Digitization 
+Object Image
+Pixel size
+ideal optical theory
+Noise
+Detector, laser, electronics,
+Photons (light: quantum-
+  noise)
+Resolution
+Confocal  aperture
+Resudial optical 
+   aberrations
+pupil  illumination
+
+===== PDF PAGE 4 =====
+3
+In a conventional light microscope, object-to-image
+transformation takes place simultaneously and parallel for
+all object points. By contrast, the specimen in a confocal
+LSM is irradiated in a pointwise fashion, i.e. serially, and
+the physical interaction between the laser light and the
+specimen detail irradiated (e.g. fluorescence) is measured
+point by point as well. To obtain information about the
+entire specimen, it is necessary to guide the laser beam
+across the specimen, or to move the specimen relative to
+the laser beam, a process known as scanning. Accordingly,
+confocal systems are also known as point-probing scan-
+ners.
+To obtain images of microscopic resolution  from a confo-
+cal LSM, a computer and dedicated software are indispen-
+sable.
+The descriptions below exclusively cover the point scanner
+principle as implemented, for example, in Carl Zeiss laser
+scanning microscopes. Configurations in which several
+object points are irradiated simultaneously are left out of
+consideration.
+The decisive design feature of a confocal LSM compared
+with a conventional microscope is the confocal aperture
+(usually called pinhole) arranged in a plane conjugate to
+the intermediate image plane and, thus, to the object
+plane of the microscope. As a result, the detector (PMT)
+can only detect light that has passed the pinhole. The pin-
+hole diameter is variable; ideally, it is infinitely small, and
+thus the detector looks at a point (point detection).
+The laser beam is focused to a diffraction-limited spot
+which illuminates only a point of the object at a time; the
+point illuminated and the point observed (i.e. image and
+object points) lie on conjugate planes, i.e. they are focused
+onto each other. This is called a confocal ray path
+(see Figure 2).
+The pinhole more or less obstructs light coming from ob-
+ject points outside the focal plane and excludes it from
+detection. Object areas thus obstructed are invisible in the
+image.  Therefore, the  confocal microscope is an inher-
+ently depth-discriminating optical system.
+By varying the pinhole diameter, the degree of confocality
+can be adapted to practical requirements. With the aper-
+ture fully open, the image is non-confocal. As an added
+advantage,  the pinhole suppresses stray light, which im-
+proves image contrast.
+Fig. 2  Ray path in a confocal LSM. A microscope objective is used
+to focus a laser beam onto the specimen, where it excites fluores-
+cence, for example. The fluorescent radiation is collected by the
+objective and efficiently directed onto the detector via a dichroic
+beamsplitter. The interesting wavelength range   of the fluores-
+cence spectrum is selected by an emission filter, which also acts as
+a barrier blocking the excitation laser line. The pinhole is arranged
+in front of the detector, on a plane conjugate to the focal plane of
+the objective. Light coming from planes above or below the focal
+plane is out of focus when it hits the pinhole (broken line), so
+most of it cannot pass the pinhole and therefore does not con-
+tribute to forming the image.
+Laser
+Focal plane
+Detection  volume
+Background
+Microscope objective
+Dichroic  mirror
+Pinhole
+Detector (PMT)
+x
+z
+Emission filter
+Beam expander
+
+===== PDF PAGE 5 =====
+4
+It is therefore possible with a confocal LSM to exclusively
+image a thin "optical slice" out of a "thick" specimen (typi-
+cally, up to 100 ´m), a method known as optical section-
+ing. Under suitable conditions, the thickness (Z dimension)
+of such a slice may be less than 500 nm.
+The fundamental advantage of the confocal LSM over a
+conventional microscope is obvious: In conventional fluo-
+rescence microscopy, the image of a "thick" biological
+specimen will only be in focus if its Z dimension is not
+greater than the wave-optical depth of focus specified for
+the respective objective.
+Unless this condition is satisfied, the in-focus image infor-
+mation from the object plane of interest is mixed with out-
+of focus image information from planes outside the focal
+plane, which reduces image contrast and increases the
+share of stray light detected. If multiple fluorescences are
+observed, there will be a mixing of the color images ob-
+tained from the channels involved (see Figure 3, top).
+A confocal LSM can therefore be used to advantage where
+"thick" specimens (such as biological cells in tissue) have to
+be examined by fluorescence. The possibility of optical
+sectioning eliminates the drawbacks attached to the ob-
+servation of such specimens by conventional fluorescence
+microscopy. With multicolor fluorescence, the various
+channels are satisfactorily separated and can be recorded
+simultaneously
+1.
+With regard to reflective specimens, the main application
+is the investigation of the topography of shallow 3D sur-
+face textures.
+Figure 3 demonstrates the capability of a confocal LSM
+by a comparison of the confocal and non-confocal images
+of a double-labeled aggregate of cells (demonstration
+object).
+.
+                                                          
+1 See also such methods as multitracking, in which the channels in the
+overall image appear completely separated thanks to their sequential
+recording (no 'crosstalk’).
+Fig. 3  Non-confocal (top) and confocal (bottom) image of a double-
+labeled cell aggregate (demonstration object). In the non-confocal
+image, specimen planes outside the focal plane degrade the informa-
+tion of interest from the focal plane, and differently stained specimen
+details appear in mixed color. In the confocal image (bottom), speci-
+men details blurred in non-confocal imaging become distinctly visible,
+and the image throughout is greatly improved in contrast.
+
+
+===== PDF PAGE 6 =====
+5
+In addition to the possibility to observe a single plane (or
+slice) of a "thick" specimen in good contrast, optical sec-
+tioning allows a great number of slices to be cut and re-
+corded at different planes of the specimen, with the
+specimen being moved along the optical axis (Z) by con-
+trolled increments. The result is a 3D data set, which pro-
+vides information about the spatial structure of the object.
+The quality and accuracy of this information depend on
+the thickness of the slice and an the spacing between suc-
+cessive slices (optimum scanning rate in Z direction = 0.5x
+the slice thickness). By computation, various aspects of the
+object can be generated from the 3D data set (3D recon-
+struction, sections of any spatial orientation, stereo pairs
+etc.). Figure 4 shows an example of a 3D data set and a
+3D reconstruction computed from it.
+Fig. 4  Left: A representative section
+of the 3D data set of a pollen grain
+autofluorescence).
+Originally, the data set comprised
+116 images. The slices are 250 nm
+apart. The object information is
+clearly seen to vary with the
+Z position.
+Right: Projection enhancing the 3D
+structure, generated from the data
+set by computation.
+A field of growing importance is the investigation of living
+specimens that show dynamic changes even in the range
+of microseconds. Here, the acquisition of confocal image
+series with a high time resolution (known as time series)
+provides a possibility of visualizing and quantifying the
+changes.
+The following section (Part I) deals with the purely optical
+conditions in a confocal LSM and the influence of the pin-
+hole on image formation, and derives from this ideal val-
+ues for resolution and optical slice thickness. Part II relati-
+vizes the ideal conditions by looking at the digitizing pro-
+cess and the noise introduced by the light as well as by the
+optoelectronic components of the system.
+The table on page 14 provides a summary of the essential
+results of Part I. A schematic overview of the entire content
+and its practical relevance is given on the fold-out back
+pages.
+
+
+===== PDF PAGE 7 =====
+6
+
+===== PDF PAGE 8 =====
+7
+Part I
+Optical Image Formation
+1. The Point Spread Function
+To understand the optical performance characteristics of a
+confocal LSM in detail, it is necessary to have a closer look
+at the fundamental optical phenomena resulting from the
+geometry of the confocal ray path. As mentioned before,
+what is most essential about a confocal LSM is that both
+illumination and observation (detection) are limited to a
+point.
+Not even an optical system of diffraction-limited design
+can image a truly point-like object as a point. Given the
+system's imaging properties, the image of an ideal point
+object will always be somewhat blurred, or "spread". The
+image of a point can be described in quantitative terms by
+the point spread function (PSF), which maps the intensity
+distribution in the image space.
+Where the three-dimensional imaging properties of a
+confocal LSM are concerned, it is necessary to consider the
+3D image or the 3D-PSF.
+In the ideal, diffraction-limited case (no optical aberra-
+tions, homogeneous illumination of the pupil - see InfoBox
+"Pupil Illumination"),  the 3D-PSF is of comet-like, rotation-
+ally symmetrical shape.
+Actually, however, any optical system has residual aberra-
+tions. Essentially, these cause deviations from the rota-
+tional symmetry of the 3D-PSF. The width of the 3D-PSF
+(resolution) is determined, apart from other factors (see
+section 2.1.1), by the expansion of the laser beam relative
+to the diameter of the objective's pupil (degree of homo-
+geneity of pupil illumination). Moreover, the expansion
+leads to a vignetting of the beam at the objective pupil, so
+that the energy quantity transported into the object is re-
+duced (see InfoBox "Pupil Illumination").
+But, as the laser is a high-energy light source, it is possible
+to obtain near-optimum resolving properties and, simulta-
+neously, a sufficient energy density at the focus of the mi-
+croscope objective. If, in addition, the residual aberrations
+can be minimized, the case of diffraction-limited imaging
+is largely satisfied in a confocal LSM.
+For illustration, Figure 5 shows  two-dimensional sections
+(XZ and XY ) through an ideal 3D-PSF.
+From the illustration it is plain that the central maximum of
+the 3D-PSF, in which 86.5 % of the total energy available
+in the pupil are concentrated, can be described as an ellip-
+soid of rotation. For considerations of resolution and opti-
+cal slice thickness it is useful to define the half-maximum
+area of the ellipsoid of rotation, i.e. the well-defined area
+in which the intensity of the 3D point image in axial and
+lateral directions has dropped to half of the central
+maximum.
+Fig.5  Section through the 3D-PSF in Z direction Ï top and in XY-
+direction Ï bottom (computed; dimensionless representation); the
+central, elliptical maximum is distinctly visible. The Airy disk (cen-
+tral maximum in the bottom illustration) is contained in the 3D-
+PSF as the greatest core diameter in lateral direction.
+z
+x
+x
+y
+
+===== PDF PAGE 9 =====
+8
+ InfoBox
+Pupil Illumination
+All descriptions in this monograph suggest a confocal LSM
+with a ray geometry providing homogeneous illumination
+at all lens cross sections. The focus generated in the object
+has an Airy distribution, being a Fourier transform of the
+intensity distribution in the objective's pupil plane. How-
+ever, the truncation of the illuminating beam cross-section
+needed for an Airy distribution causes a certain energy loss
+(a decrease in efficiency). [In Carl Zeiss microscope objec-
+tives, the pupil diameter is implemented by a physical ap-
+erture close to the mounting surface].
+The Airy distribution is characterized by a smaller width at
+half maximum and a higher resolving power. Diagram 1
+(see at bottom left) shows the intensity distribution at the
+focus as a function of the truncation factor T (the ratio of
+laser beam diameter (1/eď) and pupil diameter).
+The graph presents the relative intensity distributions at the
+focus (each normalized to 1) for different truncation fac-
+tors. (The inner curve results at a homogeneous pupil illu-
+mination with T > 5.2, while the outer one is obtained at a
+Gaussian pupil illumination with T ≤ 0.5;
+the broken curve corresponds to a truncation factor
+T=1.3). The lateral coordinate is normalized in Airy units
+(AU). From T =  3, the Airy character is predominating to
+a degree that a further increase in the truncation factor no
+longer produces a gain in resolution. (Because of the sym-
+metry of the point image in case of diffraction-limited im-
+aging, the graph only shows the intensity curve in the
++ X direction). Diagram 2 (see at bottom right) shows the
+percentage efficiency as a function of pupil diameter in
+mm, with constant laser beam expansion. The smaller the
+pupil diameter, the higher the T-factor, and the higher the
+energy loss (i.e. the smaller the efficiency). Example: If the
+objective utilizes 50% of the illuminating energy supplied,
+this means about 8% resolution loss compared to the ideal
+Airy distribution. Reducing the resolution loss to 5% is pe-
+nalized by a loss of 70% of the illuminating  energy. In
+practice, the aim is an optimum approximation to homo-
+geneous pupil illumination; this is one reason for the fact
+that the efficiency of the excitation ray path in a confocal
+LSM is less than 10%.
+The truncation factor is defined as the ratio of laser beam and pupil diameters,  T=
+~
+
+ ; the resulting efficiency is
+)2( 2
+1 q
+−
+−=η . The lateral full width at half maximum of the intensity distribution at the focus, ω⋅λ⋅= k^ctej71,0  , with
+)1
+1ln(14.051,0 η−⋅+=ω . With T< 0.6, the Gaussian character, and with T>1 the Airy character predominates the resulting
+intensity distribution.  
+Diagram 1
+0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+Truncation Factor  T>5.2 (Airy)
+Truncation Factor  T=1.3
+Truncation Factor  T<=0.5 (Gauss)
+Intensity distribution at the focus
+Lateral distance [AU]
+Relative intensity
+0 2 4 6 8 10 12 14 16 18 20
+0
+0.09
+0.18
+0.27
+0.36
+0.45
+0.54
+0.63
+0.72
+0.81
+0.9
+Efficiency
+Pupil diameter [mm]
+Relative efficiency
+
+===== PDF PAGE 10 =====
+9
+Any reference to the PSF in the following exclusively refers
+to the half-maximum area. Quantitatively the half-
+maximum area is described in terms of the full width at
+half maximum (FWHM), a lateral or axial distance corre-
+sponding to a 50% drop in intensity.
+The total PSF (PSF
+tot) of a confocal microscope behind the
+pinhole is composed of the PSFs of the illuminating ray
+path (PSF
+ill; point illumination) and the detection ray path
+(PSFdet; point detection). Accordingly, the confocal LSM
+system as a whole generates two point images: one by
+projecting a point light source into the object space, the
+other by projecting a point detail of the object into the
+image space. Mathematically, this relationship can be de-
+scribed as follows:
+)z,y,x(PSF)z,y,x(PSF)z,y,x(PSF detilltot ⊗= (1)
+PSFill corresponds to the light distribution of the laser spot
+that scans the object. Its size is mainly a function of the la-
+ser wavelength and the numerical aperture of the micro-
+scope objective. It is also influenced by diffraction at the
+objective pupil (as a function of pupil illumination) and the
+aberrations of all optical components integrated in the
+system. [Note: In general, these aberrations are low,
+having been minimized during system design]. Moreover,
+PSF
+ill may get deformed if the laser focus enters thick and
+light-scattering specimens, especially if the refractive indi-
+ces of immersion liquid and mounting medium are not
+matched and/or if the laser focus is at a great depth below
+the specimen surface (see [8]).
+PSF
+det is also influenced by all these factors and, addition-
+ally, by the pinhole size. For reasons of beam path effi-
+ciency (see Part II), the pinhole is never truly a point of in-
+finitely small size; therefore PSF
+det is never smaller in di-
+mension than PSFill. The imaging properties of a confocal
+LSM are determined by the interaction between PSFill and
+PSFdet. Mathematically, this interaction process is termed
+convolution (⊗ ). As a consequence, PSFtot ≤ PSFill .
+As the pinhole diameter is variable, the effects obtained
+with smaller and bigger pinhole diameters must be ex-
+pected to differ.
+In the following sections, various system states are treated
+in quantitative terms.
+From the explanations made so far, it can also be derived
+that the optical slice is not a sharply delimited body. It
+does not start abruptly at a certain Z position, nor does it
+end abruptly at another. Because of the intensity distribu-
+tion along the optical axis, there is a continuous transition
+from object information suppressed and such made visible.
+Accordingly, the out-of-focus object information actually
+suppressed by the pinhole also depends on the correct
+setting of the image processing parameters (PMT high
+voltage, contrast setting). Signal overdrive or excessive off-
+set should be avoided.
+2. Resolution and Depth Discrimination in a
+Confocal LSM
+Wherever quantitative data on the resolving power and
+depth discrimination of a confocal LSM are specified, it is
+necessary to distinguish clearly whether the objects they
+refer to are point-like or extended, and whether they are
+reflective of fluorescent. These differences involve distinctly
+differing imaging properties. Fine structures in real biologi-
+cal specimens are mainly of a filiform or point-like fluores-
+cent type, so that the explanations below can be limited to
+point-like fluorescent objects. The statements made for
+this case are well applicable to practical assignments.
+As already mentioned, the pinhole diameter plays a deci-
+sive role in resolution and depth discrimination. With a
+pinhole diameter greater than 1 AU (AU = Airy unit Ï see
+InfoBox "Optical Coordinates"),  the depth discriminating
+properties under consideration are essentially based on the
+law of geometric optics (geometric-optical confocality).
+The smaller the pinhole diameter, the more PSF
+det ap-
+proaches the order of magnitude of PSFill. In the limit case
+(PH < 0.25 AU), both PSFs are approximately equal in size,
+and wave-optical image formation laws clearly dominate
+(wave-optical confocality).
+Figure 6 illustrates these concepts. It is a schematic repre-
+sentation of the half-intensity areas of PSF
+ill and PSFdet at
+selected pinhole diameters.
+
+===== PDF PAGE 11 =====
+10
+Fig. 6  Geometric-optical (a) and wave-optical confocality (c)
+[XZ view]. The pinhole diameter decreases from (a) to (c). Accord-
+ingly, PSFdet shrinks until it approaches the order of magnitude of
+PSFill(c).
+Depending on the pinhole size (PSFdet), a distinction should
+be made between geometric-optical and wave-optical
+confocality. Depending on which kind of confocality domi-
+nates, the data and computation methods for resolution
+and depth discrimination differ. A comparison with image
+formation in conventional microscopes is interesting as
+well. The following sections deal with this in detail.
+InfoBox
+Optical Coordinates
+In order to enable a representation of lateral and axial
+quantities independent of the objective used, let us intro-
+duce optical coordinates oriented to microscopic imaging.
+Given the imaging conditions in a confocal microscope, it
+suggests itself to express all lateral sizes as multiples of the
+Airy disk diameter. Accordingly, the Airy unit (AU) is
+defined as:
+k^^b λ⋅= 22.11
+NA = numerical aperture of the objective
+λ  = wavelength of the illuminating laser light
+The Airy unit is primarily used for normalizing the pinhole
+diameter.
+Thus, when converting a given pinhole diameter into AUs,
+we need to consider the system's total magnification; which
+means that the Airy disk is projected onto the plane of the
+pinhole (or vice versa).
+Analogously, a sensible way of normalization in the axial
+direction is in terms of multiples of the wave-optical depth
+of field. Proceeding from the Rayleigh criterion, the follow-
+ing expression is known as Rayleigh unit (RU):
+21
+k^
+obλ⋅=
+n = refractive index of immersion liquid
+The Rayleigh unit is used primarily for a generally valid rep-
+resentation of the optical slice thickness in a confocal LSM.
+FWHMdet, axial
+FWHMdet, lateral
+FWHMill, axial
+FWHMill, lateral
+a) b)
+Geometric-optical Confocality Wave-optical Confocality
+PSFdet>>PSFill
+PSFdet>PSFill
+PSFdet>=PSFill
+c)
+
+===== PDF PAGE 12 =====
+11
+2.1 Geometric-optical confocality
+2.1.1 Resolution
+Resolution, in case of large pinhole diameters (PH > 1AU),
+is meant to express the separate visibility, both laterally and
+axially, of points during the scanning process. Imagine an
+object consisting of individual points: all points spaced
+closer than the extension of PSF
+ill are blurred (spread), i.e.
+they are not resolved.
+Quantitatively, resolution results from the axial and lateral
+extension of the scanning laser spot, or the elliptical half-
+intensity area of PSF
+ill. On the assumption of homogeneous
+pupil illumination, the following equations apply:
+Axial:
+)(
+88.0
+22,
+k^
+ctej 
+~~
+−−
+λ⋅= (2)
+n = refractive index of immersion liquid, NA = numerical aperture of
+the microscope objective, λexc = wavelength of the excitation light
+If NA < 0.5, equation (2) can be approximated by:
+2
+.67.1
+k^
+λ⋅⋅≈ (2a)
+Lateral:
+k^ctej 
+~~
+λ= 51.0, (3)
+At  first  glance,  equations  (2a)  and  (3)  are  not  different
+from  those  known  for  conventional  imaging  (see  [3]).  It  is
+striking, however, that the resolving power in the confocal
+microscope depends only on the wavelength of the illumi-
+nating  light,  rather  than  exclusively  on  the  emission  wave-
+length  as  in  the  conventional  case.  Compared  to  the  con-
+ventional  fluorescence  microscope,  confocal  fluorescence
+with  large  pinhole  diameters  leads  to  a  gain  in  resolution
+by the factor (λ
+em/λexc) via the Stokes shift.
+2.1.2 Depth discrimination
+Optical slice thickness (depth discrimination) and stray light
+suppression (contrast improvement) are basic properties of
+a confocal LSM, even if the pinhole diameter is not an ideal
+point (i.e. not infinitely small). In this case,  both depth dis-
+crimination and stray light suppression are determined ex-
+clusively by PSF
+det. This alone brings an improvement in the
+separate visibility of object details over the conventional mi-
+croscope.
+Hence, the diameter of the corresponding half-intensity
+area and the optical slice thickness are given by this equa-
+tion:
+22
+22det,
+288.0
+
+
+
+
+
+
+ ⋅⋅+
+
+
+
+
+
+
+
+−−
+λ⋅= k^
+me
+k^
+ctej ~~ (4)
+  λem= emission wavelength
+ PH  = object-side pinhole diameter [´m]
+   n  = refractive index of immersion liquid
+NA  = numerical aperture of the objective
+Equation  (4)  shows  that  the  optical  slice  thickness  com-
+p r i s e s  a  g e o m e t r i c - o p t i c a l  a n d  a  w a v e - o p t i c a l  t e r m .  F o r  a
+given objective and a given emission wavelength, the wave-
+optical  term  (first  term  under  the  root)  is  constant.  The
+geometric-optical  term  (second  term  under  the  root)  is
+dominant;  for  a  given  objective  it  is  influenced  exclusively
+by the pinhole diameter.
+Likewise, in the case of geometric-optical confocality, there
+is  a  linear  relationship  between  depth  discrimination  and
+pinhole  diameter.  As  the  pinhole  diameter  is  constricted,
+depth  discrimination  improves  (i.e.  the  optical  slice  thick-
+ness decreases).
+
+===== PDF PAGE 13 =====
+12
+Diagram 2, a graphical representation of equation (4),
+illustrates this causal relation. The graph shows the geo-
+metric-optical term alone (blue line) and the curve re-
+sulting from eq. 4 (red line). The difference between the
+two curves is a consequence of the wave-optical term.
+Diagram 2  Axial optical slice thickness  as a function of the pinhole
+diameter (red line). Parameters: NA = 0.6;  n = 1;  λ = 520 nm.
+The X axis is dimensioned in Airy units, the Y axis (slice thickness) in
+Rayleigh units (see also: InfoBox "Optical Coordinates"). In addition,
+the geometric-optical term in equation 4 is shown separately (blue
+line).
+Above a pinhole diameter of about 1.5 AU, the influence
+of diffraction effects is nearly constant.
+The interaction between PSF
+ill and PSFdet mentioned at the
+beginning becomes manifest only with pinhole diameters
+smaller than 1 AU. For pinholes greater than 1 AU, equa-
+tion (4) is a good approximation to describing depth dis-
+crimination in a confocal LSM.
+Let it be emphasized that in this case the diameters of the
+half-intensity areas of PSF
+det allow no statement about the
+axially and laterally separate visibility of points (object
+details).
+A large diameter pinhole thus has no direct influence on
+the resolution properties of a confocal LSM. In the region
+of the optical section (FWHM
+det,axial), object details are re-
+solved (imaged separately) only unless they are spaced
+closer than described by equations (2) / (2a) / (3).
+2.2 Wave-optical confocality
+If the pinhole diameter is narrowed down to <0.25 AU
+(virtually "infinitely small"), the character of the image
+changes. Additional diffraction effects at the pinhole have
+to be taken into account, and PSF
+det (optical slice thickness)
+shrinks to the order of magnitude of PSFill (Z resolution)
+(see also Figure 6c).
+In order to find simple formulae for the range of smallest
+pinhole diameters, it is expedient at first to regard the limit
+case of PH = 0, even though it is of no practical use. In
+this case, PSF
+det and PSFill are identical. The total  PSF
+() 2),,(),,( mpcmpc = (5)
+In fluorescence work it is furthermore necessary now to
+take into account both the excitation wavelength λ
+and the emission wavelength λ . This is done by speci-
+fying a mean wavelength 2:
+
+
+22
+2
+λ+λ
+λ⋅λ≈λ (6)
+Thus, equations (2) and (3) for the widths of the axial and
+lateral half-intensity areas are transformed into:
+Axial 3:
+)(
+64.0
+22,
+k^
+ctej~~
+−−
+λ⋅= (7)
+If NA < 0.5, equation (7) can be approximated by
+2
+28.1
+k^
+λ⋅⋅≈ (7a)
+Lateral:
+k^ctej~~
+λ= 37.0, (8)
+                                                          
+2 For rough estimates, the expression λ⋅λ≈λ  suffices.
+3 It is not possible to transform eq. (4) into eq. (7) by forming a limit
+(PH→ 0).
+1.2 1.48 1.76 2.04 2.32 2.6 2.88 3.16 3.44 3.72 4
+0
+0.7
+1.4
+2.1
+2.8
+3.5
+4.2
+4.9
+5.6
+6.3
+7
+Pinhole-diameter[AU]
+FWHM[RU]
+
+===== PDF PAGE 14 =====
+13
+[Note: With the object being a mirror (which is often used
+for test purposes), the factor in equation 7 is 0.45 (instead
+of 0.64), and 0.88 (instead of 1.28) in equation 7a. For a
+fluorescent plane of finite thickness, a factor of 0.7 can be
+used in equation 7. This makes it clear that apart from the
+factors influencing the optical slice thickness, the type of
+specimen also affects the measurement result.].
+From equations (7) and (7a) it is evident that depth reso-
+lution varies linearly with the refractive index n of the im-
+mersion liquid and with the square of the inverse value of
+the angular aperture  )sin(α⋅= k^  of the objective.
+To achieve high depth resolution, it is important, above all,
+to use objectives with the greatest possible angular aper-
+ture (i.e. with a high NA).
+As an NA > 1 can only be obtained with an immersion
+liquid, confocal fluorescence microscopy is, as a rule, per-
+formed with immersion objectives (see also Table 2).
+A comparison with the results set forth in section 2.1
+shows that axial and lateral resolution in the limit case
+PH=0 can be improved by a factor of 1.4.
+Further it should be noted that, because of the wave-
+optical relationships discussed, the optical performance of
+a confocal LSM cannot be enhanced infinitely. Equations
+(7) and (8) supply the minimum possible slice thickness
+and the best possible resolution, respectively.
+From the angle of application, the case of strictly wave-
+optical confocality (PH=0) is irrelevant (see also Part II).
+It is possible, though, to transfer the equations derived for
+PH=0 to the pinhole diameter range up to 1 AU, to a
+good approximation, by merely changing the factors in
+equations (7) and (8). The factors applicable to particular
+pinhole diameters can be taken from diagram 3.
+It must also be noted that with PH < 1 AU, a distinction
+between optical slice thickness and resolution can no
+longer be made. The thickness of the optical slice at the
+same time specifies the resolution properties of the system.
+That is why in the literature the term of depth resolution is
+frequently used as a synonym for depth discrimination or
+optical slice thickness. However, this is only correct for
+pinhole diameters smaller than 1 AU.
+axial________      lateral 
+--------
+Diagram 3
+Theoretical factors for equations (7) and (8), with pinhole diameters
+between 0 and 1 AU.
+To conclude the observations about resolution and depth
+discrimination (or depth resolution), Table 1 provides an
+overview of the formulary relationships developed in Part I.
+In addition, diagram 4 a on page 15 shows the overall
+curve of optical slice thickness for a microscope objective
+of NA = 1.4 and n = 1.52 (λ = 488 nm).
+In diagrams 4 b-d, equation (7) is plotted for different ob-
+jects and varied parameters (NA, λ, n).
+0 0.2 0.4 0.6 0.8 1
+0.35
+0.46
+0.57
+0.68
+0.79
+0.9
+Pinhole diameter  [AU]
+Factor
+
+===== PDF PAGE 15 =====
+14
+Table 1
+Conventional microscopy Confocal microscopy
+1 AU < PH < ∞
+Confocal microscopy
+PH < 0.25 AU
+1. Optical slice thickness
+not definable
+With a conventional microscope, unlike
+in confocal microscopy, sharply defined
+images of "thick" biological specimens
+can only be obtained if their Z dimen-
+sion is not greater than the wave-
+optical depth of field specified for the
+objective used. Depending on specimen
+thickness, object information from the
+focal plane is mixed with blurred in-
+formation from out-of-focus object
+zones.
+Optical sectioning is not possible; con-
+sequently, no formula for optical slice
+thickness can be given.
+1. Optical slice thickness
+1)
+2
+2
+2
+2880
+
+
+
+
+
+
+ ⋅⋅+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ −−
+λ⋅
+k^
+me
+k^Ï
+K 
+Corresponds to the FWHM of the in-
+tensity distribution behind the pinhole
+(PSF
+det). The FWHM results from the
+emission-side diffraction pattern and
+the geometric-optical effect of the
+pinhole. Here, PH is the variable object-
+side pinhole diameter in ´m.
+1. Optical slice thickness
+Fk^E
+K
+22
+640
+−−
+λ⋅
+The term results as the FWHM of the
+total PSF Ï the pinhole acts according
+to wave optics.
+λ  stands for a mean wavelength -  see
+the text body above for the exact defi-
+nition.
+The factor 0.64 applies only to a fluo-
+rescent point object.
+2. Axial resolution (wave-optical depth
+of field)
+2k^
+λ⋅
+Corresponds to the width of the emis-
+sion-side diffraction pattern at 80% of
+the maximum intensity, referred to the
+object plane. In the literature, the
+wave-optical depth of field in a con-
+ventional microscope is sometimes
+termed depth resolution. However, a
+clear distinction should be made be-
+tween the terms resolution and depth
+resolution.
+2. Axial resolution
+Fk^E
+K 
+22
+880
+−−
+λ⋅
+FWHM of PSFill (intensity distribution at
+the focus of the microscope objective)
+in Z direction
+No influence by the pinhole
+2. Axial resolution
+Fk^E
+K
+22
+640
+−−
+λ⋅
+FWHM of total PSF in Z direction
+As optical slice thickness and resolution
+are identical in this case, depth resolu-
+tion is often used as a synonym.
+3. For comparison: FWHM of PSF in the
+intermediate image (Z direction) Ï re-
+ferred to the object plane
+2
+67.1
+k^
+λ⋅⋅
+3. Approximation to 2. for NA < 0.5
+2
+67.1
+k^
+λ⋅⋅
+3. Approximation to 2. for NA < 0.5
+2
+28.1
+k^
+λ⋅⋅
+4. Lateral resolution
+k^
+λ⋅51.0
+FWHM of the diffraction pattern in the
+intermediate image Ï referred to the
+object plane) in X/Y direction
+4. Lateral resolution
+k^
+λ⋅51.0
+FWHM of  PSFill (intensity distribution
+at the focus of the microscope objec-
+tive)  in X/Y direction
+plus contrast-enhancing effect of the
+pinhole because of stray light suppres-
+sion
+4. Lateral resolution
+k^
+λ⋅37.0
+FWHM of total PSF in X/Y direction
+plus contrast-enhancing effect of the
+pinhole because of stray light suppres-
+sion
+All data in the table refer to quantities in the object space and apply to a fluorescent point object.
+NF The equation is valid only for PH > 1 AU, i.e. transformation into the equation  for  PH = 0 by forming a limit
+(PH →  0) is not possible.  PH < ∞  is meant to express a pinhole diameter of  < 4-5 AU.==
+
+===== PDF PAGE 16 =====
+                                      a) Variation of  pinhole diameter                                     b) Variation of  numerical apertur
+                                         c) Variation of wavelength
+                                             d) Variation of refractive index
+15
+                    Diagram 4 (a,b,c,d)
+
+
+===== PDF PAGE 17 =====
+16
+
+===== PDF PAGE 18 =====
+17
+Part II
+Electronic Signal Processing
+1. Introduction
+After the optical phenomena have been discussed in Part I,
+Part II takes a closer look at how the digitizing process and
+system-inherent sources of noise limit the system's per-
+formance.
+As stated in Part I, a confocal LSM scans the specimen
+surface point by point. This means that an image of the
+total specimen is not formed simultaneously, with all
+points imaged in parallel (as, for example, in a CCD cam-
+era), but consecutively as a series of point images. The
+resolution obtainable depends on the number of points
+probed in a feature to be resolved.
+Confocal microscopy, especially in the fluorescence mode,
+is affected by noise of light. In many applications, the
+number of light quanta (photons) contributing to image
+formation is extremely small. This is due to the efficiency of
+the system as a whole and the influences involved, such as
+quantum yield, bleaching and saturation of fluorochromes,
+the transmittance of optical elements etc. (see InfoBox
+"Fluorescence"). An additional influence factor is the energy
+loss connected with the constriction of the pinhole di-
+ameter.
+In the following passages, the influences of  scanning  and
+noise  on  resolution  are  illustrated  by  practical  examples
+and with the help of a two-point object. This is meant  to
+be an object consisting of two self-luminous points spaced
+at 0.5 AU (see InfoBox "Optical Coordinates"). The diffrac-
+tion  patterns  generated  of  the  two  points  are  superim-
+p o s e d  i n  t h e  i m a g e  s p a c e ,  w i t h  m a x i m u m  o f  o n e  p a t t e r n
+coinciding with the first minimum of the other. The sepa-
+rate  visibility  of  the  points  (resolution)  depends  on  the
+existence of a dip between the two maxima (see Figure 8).
+2. Digitization / Signal Processing
+As a rule, object information is detected by a photomulti-
+plier (PMT). The PMT registers the spatial changes of object
+properties I(x) as a temporal intensity fluctuation I(t). Spa-
+tial and temporal coordinates are related to each other by
+the speed of the scanning process (x = t•v
+scan).  The PMT
+converts optical information into electrical information.
+The continuous electric signal is periodically sampled by an
+analog-to-digital (A/D) converter and thus transformed
+into a discrete, equidistant succession of measured data
+(pixels) (Figure 7).
+Fig. 7  Pointwise sampling of a continuous signal
+T = spacing of two consecutive sampling points
+t = time of signal detection (t<<T)
+The quality of the image scanned depends on which of the
+two types of A/D conversion is employed.
+• Sampling: The time (t) for signal detection (measure-
+ment) is small compared to the time (T) per cycle
+(pixel time) (see Figure 7).
+• Integration: The signal detection time has the same
+order of magnitude as the pixel time.
+  intensity
+t T   time
+Samplingof a contionous signal
+
+===== PDF PAGE 19 =====
+18
+InfoBox
+Fluorescence
+Fluorescence is one of the most important contrasting
+methods in biological confocal microscopy.
+Cellular structures can be specifically labeled with dyes
+(fluorescent dyes = fluorochromes or fluorophores) in
+various ways. Let the mechanisms involved in confocal
+fluorescence microscopy be explained by taking fluorescein
+as an example of a fluorochrome. Fluorescein has its ab-
+sorption maximum at 490 nm. It is common to equip a
+confocal LSM with an argon laser with an output of
+15-20 mW at the 488 nm line. Let the system be adjusted
+to provide a laser power of 500 ´W in the pupil of the mi-
+croscope objective. Let us assume that the microscope
+objective has the ideal transmittance of 100%.
+With a C-Apochromat 63x/1.2W, the power density at the
+focus, referred to the diameter of the Airy disk, then is
+2.58   10
+5 W/cmď. This corresponds to an excitation pho-
+ton flux of 6.34   1023 photons/cmďsec. In conventional
+fluorescence microscopy, with the same objective, com-
+parable lighting power (xenon lamp with 2 mW at
+488 nm) and a visual field diameter of 20 mm, the excita-
+tion photon flux is only 2.48   10
+18  photons/cmďsec, i.e.
+lower by about five powers of ten.
+This is understandable by the fact that the laser beam in a
+confocal LSM is focused into the specimen, whereas the
+specimen in a conventional microscope is illuminated by
+parallel light.
+The point of main interest, however, is the fluorescence (F)
+emitted.
+The emission from a single molecule depends on
+the molecular cross-section 
+σ , the fluorescence quantum
+yield Qe and the excitation photon flux as follows:
+fnc ⋅⋅σ=  [photons/sec]
+In principle, the number of photons emitted increases with
+the intensity of excitation. Actually, however, the limiting
+parameter is the maximum emission rate of the fluoro-
+chrome molecule, i.e. the number of photons emittable
+per unit of time. The maximum emission rate is deter-
+mined by the lifetime (= radiation time) of the excited
+state. For fluorescein this is about 4.4 nsec (subject to
+variation according to the ambient conditions). On aver-
+age, the maximum emission rate of fluorescein is
+2.27   10
+8 photons/sec. This corresponds to an excitation
+photon flux of 1.26   1024 photons/cmďsec.
+At rates greater than 1.26   1024 photons /cmďsec, the
+fluorescein molecule becomes saturated.
+An increase in the excitation photon flux will then no
+longer cause an increase in the emission rate; the number
+of photons absorbed remains constant. In our example,
+this case occurs if the laser power in the pupil is increased
+from 500 ´W to roughly 1 mW. Diagram 4 shows the re-
+lationship between the excitation photon flux and the laser
+power in the pupil of the stated objective for a wavelength
+of 488 nm. Diagram 6 illustrates the excited-state satura-
+tion of fluorescein molecules. The number of photons ab-
+sorbed is approximately proportional to the number of
+photons emitted (logarithmic scaling).
+The table below lists the characteristics of some important fluorochromes:
+Absorpt.max.(nm)σ/10-16 Qe σ*Q/10-16
+Rhodamine 554 3.25 0.78 0.91
+Fluorescein 490 2.55 0.71 1.81
+Texas Red  596 3.3 0.51 1.68
+Cy 3.18 550 4.97 0.14 0.69
+Cy 5.18 650 7.66 0.18 1.37
+Source: Handbook of Biological Confocal Microscopy, p. 268 /Waggoner
+In the example chosen, F = 1.15   108  photons/sec or 115 photons/´sec
+
+===== PDF PAGE 20 =====
+19
+Diagram 5  Excitation photon flux at different laser powers                 Diagram 6  Excited-state saturation behavior (absorb ed photons)
+            of fluorescein molecules
+What has been said so far is valid only as long as the
+molecule is not affected by photobleaching. In an oxygen-
+rich environment, fluorescein bleaches with a quantum ef-
+ficiency of about 2.7   10
+-5. Therefore, a fluorescence
+molecule can, on average, be excited n = 26,000 times
+(
+nQ Q b= / ) before it disintegrates.
+With 
+maxc
+= , and referred to the maximum emission
+rate, this corresponds to a lifetime of the fluorescein mole-
+cule of about 115 ´s.
+It becomes obvious that an increase in excitation power
+can bring about only a very limited gain in the emission
+rate. While the power provided by the laser is useful for
+FRAP (fluorescence recovery after photobleaching) experi-
+ments, it is distinctly too high for normal fluorescence ap-
+plications. It is highly important, therefore, that the excita-
+tion power can be controlled to fine increments in the
+low-intensity range.
+A rise in the emission rate through an increased fluoro-
+phore concentration is not sensible either except within
+certain limits. As soon as a certain molecule packing den-
+sity is exceeded, other effects (e.g. quenching) drastically
+reduce the quantum yield despite higher dye concentra-
+tion.
+Another problem to be considered is the system's detec-
+tion sensitivity. As the fluorescence radiated by the mole-
+cule goes to every spatial direction with the same prob-
+ability,  about 80% of the photons will not be captured by
+the objective aperture (NA =  1.2).
+With the reflectance and transmittance properties of the
+subsequent optical elements and the quantum efficiency
+of the PMT taken into account, less than 10% of the pho-
+tons emitted are detected and converted into photo-
+electrons.
+In our example, a photon flux of F = 115 photons/´sec in
+a sampling time of 4 ´sec/pixel leads to about 10 photoe-
+lectrons/pixel.
+In practice, however, the object observed will be a labeled
+cell. As a rule, the cell volume is distinctly greater than the
+volume of the sampling point. What is really interesting,
+therefore, is the number of dye molecules contained in the
+sampling volume at a particular dye concentration. In the
+following considerations, diffusion processes of fluoro-
+phore molecules are neglected. The computed numbers of
+photoelectrons (= detected photons) are based on the
+photon flux resulting at an excitation power of 100 ´W.
+With the sampling volume of  V = 13.6   10
+-15  for
+λ = 488 nm and NA = 1.2, and with a dye concentration
+of 1 ´Mol/l, the sampling volume contains 80 dye mole-
+cules. This corresponds to a number of about 280 pho-
+toelectrons/pixel. With concentration reduced to
+0.1 ´Mol/l, the number of photoelectrons drops to
+28/pixel.
+It can be said that the number of photons to be expected
+in most applications of confocal fluorescence microscopy is
+rather small (< 1000). If measures are taken to increase
+the number of photons, dye-specific properties, such as
+photobleaching, have to be taken into account.
+0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1
+0
+2.14 1023
+4.29 1023
+6.43 1023
+8.57 1023
+1.07 1024
+1.29 1024
+1.5 1024
+Laser power [mW]
+Incident photons [1/s*cm²]
+1 1017 1 1018 1 1019 1 1020 1 1021 1 1022 1 1023 1 1024 1 1025
+1 1014
+1 1015
+1 1016
+1 1017
+1 1018
+1 1019
+1 1020
+1 1021
+Incident photons [1/s*cm²]
+Absorbed photons [1/s*cm²]
+
+===== PDF PAGE 21 =====
+20
+Integration is equivalent to an averaging of intensities over
+a certain percentage of the pixel time known as pixel dwell
+time. To avoid signal distortion (and this to prevent a loss
+of resolution), the integration time must be shorter than
+the pixel time. The highest resolution is attained with point
+sampling (the sampling time is infinitesimally short, so that
+a maximum density of sampling points can be obtained).
+By signal integration, a greater share of the light emitted
+by the specimen contributes to the image signal. Where
+signals are weak (e.g. fluorescence), this is a decisive ad-
+vantage over point sampling with regard to the signal-to-
+noise ratio (SNR). Therefore, Carl Zeiss confocal LSM sys-
+tems operate in the integration mode, as a rule. For the
+user of an LSM 510, the relative integration time per pixel
+is a fixed value (e.g. 70%). The absolute integration time
+can be varied by varying the scanning speed, which also
+means a change of the pixel time.
+It is known from Part I that the information content of the
+signal is limited by the resolving power of the microscope
+optics. The full width at half intensity (FWHM
+lat) of a point
+image supplies a realistic estimate (see equation 3).
+To avoid a loss of information during the scanning proc-
+ess, it is necessary to stick to the Nyquist theorem.
+Accordingly, the optimum interval in scanning a periodic
+signal is half the period of the feature spacing to be re-
+solved, or a maximum pixel spacing of
+d
+pix= 0.5 x FWHMlat. (or 0.25 AU).
+An Airy disk, for example, must be scanned with a pixel
+raster of at least 4 x 4 pixels if it is to be rendered correctly.
+With a two-point object (two overlapping Airy disks), the
+number of sampling points needed is greater accordingly
+(Figure 8).
+If the number of sampling points per feature size is smaller
+than that given by the Nyquist theorem (undersampling),
+part of the information will be lost. This is evident in
+Figure 9 c especially by the unresolved fine features. An ex-
+cessive number of sampling points per feature size (over-
+sampling) means  a greater number of readings without a
+gain in information; simultaneously, the time per pixel be-
+comes shorter. The volume of data to be processed is in-
+flated unnecessarily, and the noise of the measurement
+signal increases (see section 3). Under unfavorable condi-
+tions, even artifacts may result (aliasing). As a rule, this is
+the case if the feature spacing in the specimen is equal, or
+nearly equal, to the  pixel spacing.
+Fig. 8  The graph illustrates the scanning of a two-point object with
+the minimum number of sampling points needed to avoid a loss of
+resolution (spacing of sampling points 0.25 AU).
+0.25 0.5 0.75 1 1.25 1.5 1.75
+AU
+0.2
+0.4
+0.6
+0.8
+1
+Rel. intensity
+
+===== PDF PAGE 22 =====
+21
+Fig. 9  Undersampling, correct sampling and oversampling of a continuous signal
+A quantity of decisive importance in this connection is the
+maximum scanning angle set via the scanning zoom. By
+varying the scanning angle, it is possible to directly influ-
+ence the edge length of the scanned field in the interme-
+diate image plane (or object plane), and thus the physical
+pixel size (at a given number of pixels per line). The smaller
+the scanning angle, the smaller is the edge length of the
+scanned field, and the smaller is the pixel (see the example
+below).
+In this way, the user of a Carl Zeiss confocal LSM can con-
+trol the sampling rate (pixel size). For setting the suitable
+scanning zoom for correct Nyquist sampling, the pixel size
+d
+Pix in the object is important.
+For a Carl Zeiss confocal LSM, there is a simple formula,
+based on the edge length of the scanned field in the in-
+termediate image:
+j~~~wmk
+m
+⋅⋅= 7.12
+Number of pixels  = number of pixels per line,
+Zoom factor = scanning zoom set in the software
+(Example: Zoom factor 2 reduces the edge length of the scanned field
+by a factor of 2),
+Magnification 
+obj = objective magnification
+For example, with a zoom factor of 6, a 40x microscope
+objective (NA = 1.3) and a scanned field of 512ď, the re-
+sulting pixel size is about 100 nm. With a zoom factor of
+1, the pixel size would be 615 nm.
+If you compare the pixel size with the diameter (D) of the
+Airy disk (D = 458 nm for λ = 488 nm and NA = 1.3),
+zoom factor 1 in our example would mean that the pixel is
+greater than the Airy disk, which makes the pixel size the
+limiting factor for resolution (pixel resolution). With zoom
+factor 6, the Nyquist theorem is nearly satisfied.
+Hence, the zoom factor influences not only the total mag-
+nification but also the resolution properties of the system.
+With the more recent LSM systems of Carl Zeiss, the num-
+ber of sampling points can also be influenced by an in-
+crease in the number of pixels per scan line.
+(The number of pixels (X/Y) per image can be freely se-
+lected between 4 x 2 and 2048 x 2048).
+pixel 
+01 0 0 50 150
+pixel 
+01 0 0 50 150
+intensity
+0
+100
+50
+150
+intensity
+0
+100
+50
+150
+intensity
+0
+100
+50
+150
+pixel 
+01 0 0 50 150
+Oversamplin g Correct Samplin g Undersamplin g
+a) c)b)
+
+===== PDF PAGE 23 =====
+22
+3. Noise
+The main factors of noise important in a confocal LSM
+system are detector noise (dark noise, secondary emission
+noise), laser noise, and shot noise of the light (see InfoBox
+"Sources of Noise"). As a rule, these sources of noise are of
+a statistical nature. Periodic noise occurs rarely ever, and if
+it does, it tends to correlate with defective devices or me-
+chanical vibration in the setup; therefore it has been left
+out of consideration here.
+As the illustration below (Figure 10) shows, the number of
+photons hitting the PMT depends not only on the intensity
+of fluorescence (see InfoBox "Fluorescence"), but also on
+the diameter of the pinhole. The graph shows the intensity
+distribution of a two-point object resulting behind the
+pinhole, in normalized (left) and non-normalized form
+(right). The pinhole diameter was varied between 2 AU
+and 0.05 AU. At a diameter of 1 AU the pinhole just
+equals the size of the Airy disk, so that there is only a slight
+loss in intensity. The gain in resolution, though, is mini-
+mum in this case.
+With a pinhole diameter <1 AU, resolution improves
+(better point separation thanks to a deeper dip), which is
+penalized by a drastic loss in energy.
+Moreover, it should be considered that the question which
+noise source dominates depends on the signal level. With
+high-amplitude signals (number of detected photons
+> 10000), laser noise is the dominating effect, whereas
+the quality of low signals (number of detected photons
+< 1000) is limited by the shot noise of the light.
+Therefore, laser noise tends to be the decisive noise factor
+in observations in the reflection mode, while shot noise
+dominates in fluorescence work. With recent PMT models
+(e.g., from Hamamatsu), detector dark noise is extremely
+low, same as secondary emission noise, and both can be
+neglected in most practical applications (see InfoBox
+"Sources of Noise").
+Therefore, the explanations below are concentrated on the
+influence of shot noise on lateral resolution.
+Fig. 10  As shown in Part I, small pinhole diameters lead to improved
+resolution (smaller FWHM, deeper dip). The graph on the right
+shows, however, that the constriction of the pinhole diameter is con-
+nected with a drastic reduction in signal level. The drop in intensity is
+significant from PH<1 AU (AU = AE).
+0.5 1 1.5 2
+x[AE]
+0.2
+0.4
+0.6
+0.8
+1
+d=0.05AE
+d=0.25AE
+d=0.50AE
+d=1.00AE
+d=2.00AE
+0.5 1 1.5 2
+x[AE]
+0.2
+0.4
+0.6
+0.8
+1
+d=0.05AE
+d=0.25AE
+d=0.5AE
+d=1.0AE
+d=2.0AE
+
+===== PDF PAGE 24 =====
+23
+InfoBox
+Sources of Noise
+Sources of noise effective in the LSM exist everywhere in the
+signal train - from the laser unit right up to A/D conversion.
+Essentially, four sources of noise can be distinguished:
+Laser noise q
+Laser noise is caused by random fluctuations in the filling of
+excited states in the laser medium. Laser noise is propor-
+tional to the signal amplitude N and therefore significant
+where a great number of photons (N<10000) are de-
+tected.
+Shot noise (Poisson noise)
+This is caused by the quantum nature of light. Photons with
+the energy 
+h ⋅ν hit the sensor at randomly distributed time
+intervals. The effective random distribution is known as
+Poisson distribution. Hence,
+kkm=∆ kkpkom/=
+where N = number of photons detected per pixel time
+(= photoelectrons = electrons released from the PMT cathode by
+incident photons). With low photoelectron numbers (N < 1000),
+the number N of photons incident on the sensor can only be de-
+termined with a certainty of 
+±√ N.
+N can be computed as
+() mnb
+mk ⋅=
+λ
+where QE (λ ) = quantum yield of the sensor at wavelength λ ;
+1 photon = λ⋅ /ch ; c = light velocity; h = Planck's constant
+Multiplicative (secondary emission) noise
+Caused by the random variation of photoelectron multipli-
+cation at the dynodes of a PMT. The amplitude of multipli-
+cative noise is a factor between 1.1 and 1.25, depending
+on the dynode system and the high voltage applied (gain).
+Generally, secondary emission noise is the lower, the higher
+the PMT voltage is, because a higher voltage across the
+dynodes improves the collecting efficiency and reduces the
+statistical behavior of multiplication.
+Dark noise
+Dark noise is due to the generation of thermal dark elec-
+trons Nd, irrespective of whether the sensor is irradiated.
+Nd statistically fluctuates about 
+dN . Dark noise is speci-
+fied for a PMT voltage of 1000 V; with lower voltages it
+progressively loses significance.
+Dark noise can be reduced by cooling the sensor. However,
+the reduction is significant only if 
+dNN ≤ , e.g. in object-free
+areas of a fluorescence specimen. In addition, the dark
+noise must be the dominating noise source in order that
+cooling effects a signal improvement; in most applications,
+this will not be the case.
+Additional sources of noise to be considered are amplifier
+noise in sensor diodes and readout noise in CCD sensors. In
+the present context, these are left out of consideration.
+The mean square deviation N∆ from the average (N+Nd) of
+the photoelectrons and dark electrons registered,
+() () 2
+d q1NNseN ++⋅=∆
+so that the total signal-to-noise ratio can be given as
+() () 2
+d
+2
+2
+q1NNse
+NSNR
+++
+=
+where
+N number of photoelectrons per pixel time
+(sampling time),
+se multiplication noise factor of secondary emission,
+q peak-to-peak noise factor of the laser,
+Nd number of dark electrons in the pixel or sampling time.
+Example:
+For N=1000, Nd=100, se=1.2, and q=0.05,
+SNR
+SNR
+=
++⋅ +
+=
+⋅
+1000
+12 1000 100 1 0 05
+251
+2
+22.( ) ( . )
+.
+
+===== PDF PAGE 25 =====
+24
+3.1 Resolution and shot noise -
+resolution probability
+If the number of photons detected (N) is below 1000,
+fluorescence emission should be treated as a stochastic
+rather than a continuous process; it is necessary, via the
+shot noise, to take the quantum nature of light into ac-
+count (the light flux is regarded as a photon flux, with a
+photon having the energy E = h⋅ν). Resolution becomes
+contingent on random events (the random incidence of
+photons on the detector), and the gain in resolution ob-
+tainable by pinhole constriction is determined by the given
+noise level. Figure 11 will help understand the quantum
+nature of light.
+As a possible consequence of the shot noise of the de-
+tected light, it may happen, for example, that noise pat-
+terns that change because of photon statistics, degrade
+normally resolvable object details in such a way that they
+are not resolved every time in repeated measurements. On
+the other hand, objects just outside optical resolvability
+may appear resolved because of noise patterns modulated
+on them. Resolution of the "correct" object structure is the
+more probable the less noise is involved, i.e. the more
+photons contribute to the formation of the image.
+To quantify these relationships, it is sensible in confocal
+fluorescence microscopy, and with low photon numbers,
+to combine the concept of probability with that of resolu-
+tion. Therefore, let us talk of resolution probability rather
+than of resolution, and consider a model which combines
+the purely optical understanding of image formation in the
+confocal microscope (PSF) with the influences of shot noise
+of the detected light and the scanning and digitization of
+the object in view of the discernability of object details.
+Diagram 7 shows the dependence of the  resolution pro-
+bability on signal level and pinhole diameter by the ex-
+ample of a two-point object and for different numbers of
+photoelectrons/point object. If we consider that the image
+of a point objects is covered by a raster of pixels, a norma-
+lization based on pixels does not appear sensible.
+Thus, a number of 100 photoelectrons/point object means
+that the point object emits as many photons within the
+sampling time as to result in 100 photoelectrons behind
+the light-sensitive detector target (PMT cathode). The
+number of photoelectrons obtained from a point object in
+this case is about twice the number of photoelectrons at
+the maximum pixel (pixel at the center of the Airy disk).
+With photoelectrons as a unit, the model is independent
+of the sensitivity and noise of the detector and of detec-
+tion techniques (absolute integration time / point samp-
+ling / signal averaging). The only quantity looked at is the
+number of detected photons.
+Fig. 11  The quantum nature of light can be made visible in two ways:
+a)  by reducing the intensity down to the order of single photons
+and
+b)  by shortening the observation time, despite high intensity.
+The graph above illustrates case (b) –  by cutting down the observa-
+tion time, it is possible to resolve individual photons of the light flux in
+their irregular (statistical) succession.
+Optical
+power
+t
+P(t)
+t
+P(t)
+Optical
+power
+Photon
+arrivals
+
+===== PDF PAGE 26 =====
+25
+A resolution probability of 90% is considered necessary for
+resolving the two point images. Accordingly, the two-
+point object defined above can only be resolved if each
+point produces at least about 25 photoelectrons. With
+pinhole diameters smaller than 0.25 AU, the drastic in-
+crease in shot noise (decreasing intensity of the detected
+light) will in any case lead to a manifest drop in resolution
+probability, down to the level of indeterminateness (≤ 50%
+probability) at PH = 0.
+As another consequence of shot noise, the curve maxi-
+mum shifts toward greater pinhole diameters as the num-
+ber of photoelectrons drops.
+The general slight reduction of resolution probability to-
+wards greater pinhole diameters is caused by the decreas-
+ing effectiveness of the pinhole and the decline in the as-
+sociated effects (suppression of out-of-focus object regions
+etc.; see Part I).
+Diagram 7  The graph shows the computed resolution probability of
+two self-luminous points (fluorescence objects) spaced at 1/2 AU, as a
+function of pinhole size for various photoelectron counts per  point
+object (e-). The image raster conforms to the Nyquist theorem (critical
+raster spacing  = 0.25 AU); the image raster is subjected to interpo-
+lation. The photoelectron count per point object is approximately
+twice that per pixel (referred to the pixel at the center of the Airy
+disk). Each curve has been fitted to a fixed number of discrete values,
+with each value computed from 200 experiments.
+The resolution probability is the quotient between successful experi-
+ments (resolved) and the total number of experiments. A resolution
+probability of  70%  means that 7 out of 10 experiments lead to re-
+solved structures. A  probability  > 90%  is imperative for lending
+certainty to the assumption that the features are resolved. If we as-
+sume a point-like fluorescence object containing  6 FITC  fluores-
+cence molecules (fluorochrome concentration of about  0.1 µMol), a
+pinhole size of 0.5 AU, a laser power of 100 µW in the pupil and an
+objective NA of 1.2 (n = 1.33), the result is about  45 photoelectrons /
+point object on the detection side.
+0.25 0.5 0.75 1 1.25 1.5
+ground level = 0e-
+Distance of sample points = 1/4 AU
+0.2
+0.4
+0.6
+0.8
+1 100e-
+50e-
+30e-
+20e-
+10e-
+6e-
+4e-
+3e-
+2e-
+probability
+resololution
+size [AU]
+pinhole
+
+===== PDF PAGE 27 =====
+26
+The pinhole diameter selected in practice will therefore al-
+ways be a trade-off between two quality parameters: noise
+(SNR as a function of the intensity of the detected light)
+and resolution (or depth discrimination). The pinhole al-
+ways needs a certain minimum aperture to allow a mini-
+mum of radiation (depending on the intensity of fluores-
+cence) to pass to the detector.
+Where fluorescence intensities are low, it may be sensible
+to accept less than optimum depth discrimination so as to
+obtain a higher signal level (higher intensity of detected
+light = less noise, better SNR).
+3.2 Possibilities to improve SNR
+Pinhole diameters providing a resolution probability below
+90% may still possibly yield useful images if one uses a
+longer pixel time or employs the signal averaging function.
+In the former case, additional photons are collected at
+each pixel;  in the latter case, each line of the image, or
+the image as a whole, is scanned repeatedly, with the in-
+tensities being accumulated or averaged. The influence of
+shot noise on image quality decreases as the number of
+photons detected increases. As fluorescence images in a
+confocal LSM tend to be shot-noise-limited, the increase in
+image quality by the methods described is obvious.
+With these methods, detector noise is also reduced, same
+as laser noise at high signal levels. The diagrams below
+show the influence of pixel time  (Diagram 8) and the in-
+fluence of the number of signal acquisitions (Diagram 9)
+on SNR in [dB]. The linearity apparent in the semilogarith-
+mic plot applies to shot-noise-limited signals only. (As a
+rule, signals are shot-noise-limited if the PMT high voltage
+needed for signal amplification is greater than 500 V).
+A doubling of pixel time, same as a doubling of the num-
+ber of signal acquisitions, improves SNR by a factor of 2
+(3 dB). The advantage of the averaging method is the
+lower load on the specimen, as the exposure time per pixel
+remains constant. Photon statistics are improved by the
+addition of photons from several scanning runs
+(
+NnSNR ⋅= ; N = const., n = number of scans aver-
+aged). By comparison, a longer pixel time directly improves
+the photon statistics by a greater number N of photons
+detected per pixel (
+NSNR= , N = variable), but there is a
+greater probability of photobleaching or saturation effects
+of the fluorophores.
+Diagrams 8 and 9  Improvement of the signal-to-noise ratio. In Dia-
+gram 8 (left), pixel time is varied, while the number of signal acquisi-
+tions (scans averaged) is constant.  In Diagram 9 (right), pixel time is
+constant, while the number of signal acquisitions is varied. The ordi-
+nate indicates  SNR in [dB], the abscissa the free parameter (pixel
+time, scans averaged).
+Variation of averages
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+11 0 1 0 0
+Number of averages
+SNR
+[dB]
+Diagram 9
+Variation of pixel time
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+1 10 100
+Pixel time [´s]
+SNR
+[dB]
+Diagram 8
+
+===== PDF PAGE 28 =====
+27
+The pictures below demonstrate the influence of pixel time
+on SNR; object details can be made out much better, if the
+pixel time increases.
+Fig. 12  Two confocal images of the same fluorescence specimen
+(mesophyll cells). Both images were recorded with identical parame-
+ters except pixel time, which is 4.48 µs for the top image and 1.12 µs
+for the bottom image. According to Diagram 8, the difference in SNR
+is 6 dB. The same effect can be observed if the averaging method is
+applied.
+Another sizeable factor influencing the SNR of an image is
+the efficiency of the detection ray path. This can be directly
+influenced by the user through the selection of appropri-
+ate filters and dichroic beamsplitters. The SNR of a FITC
+fluorescence image, for example, can be improved by a
+factor of about 4 (6 dB) if the element separating the ex-
+citation and emission ray paths is not a neutral 80/20%
+beamsplitter but a dichroic beamsplitter optimized for the
+particular fluorescence.
+4. Summary
+This monograph comprehensively deals with the quality
+parameters of resolution, depth discrimination, noise and
+digitization, as well as their mutual interaction. The set of
+equations presented allows in-depth theoretical investiga-
+tions into the feasibility of carrying out intended experi-
+ments with a confocal LSM.
+The difficult problem of quantifying the interaction be-
+tween resolution and noise in a confocal LSM is solved by
+way of the concept of resolution probability; i.e. the unre-
+stricted validity of the findings described in Part I is always
+subject to a sufficient number of photons reaching the
+detector.
+Therefore, most applications of confocal fluorescence mi-
+croscopy tend to demand pinhole diameters greater than
+0.25 AU; a diameter of 1 AU is a typical setting.
+
+
+===== PDF PAGE 29 =====
+28
+Part III
+Authors / Sources / References
+Authors:
+(on the R&D staff of Carl Zeiss Jena)
+Stefan Wilhelm,
+Bernhard Grbler,
+Martin Gluch,
+Hartmut Heinz ✝
+We gratefully acknowledge the assistance of many other
+Carl Zeiss Jena staff members who contributed to this
+brochure.
+1. Barton, D.L., Tangyunyong, P., Scanning Fluorescent
+Microthermal Imaging, Proceedings of 23
+rd Int Sympo-
+sium for Testing and Failure Analysis (10/1997), Santa
+Clara, California
+2. Barton, D.L., Tangyunyong, P., Infrared Light
+Emission from Semiconductor Devices, ISTFA,
+pp. 9-17, (1996)
+3. Beyer, H.: Handbuch der Mikroskopie, 2nd Edition,
+VEB Verlag Technik Berlin, (1985)
+4. Brismar, H., Trepte, O., Ulfhake, B.: Spectra and Fluo-
+rescence Lifetimes of Lissamine, Rhodamine etc....: In-
+fluences of Some Environmental Factors Recorded with
+a Confocal Laser Scanning Microscope, The Journal of
+Histochemistry and Cytochemistry, Vol. 43, pp. 699-
+707, (7/1995)
+5. Keller, H.E., Objective Lens for Confocal Microscopy,
+Handbook of Biological Confocal Microcopy,
+pp. 111-125, Plenum Press, 2
+nd Edition (1995)
+6. Lackmann, F., et. al., An Automated Latch-up Meas-
+urement System Using a Laser Scanning Microscope,
+SPIE Vol 1028 Scanning Imaging, (1988)
+7. Grbler, B., Untersuchungen zur Bildbertragung in
+abtastenden Mikroskopen unter besonderer Berck-
+sichtigung der 3D-Abbildung, doctoral thesis, Univer-
+sity of Potsdam, (1995)
+8. Hell, S., et al., Aberrations in confocal fluorescence mi-
+croscopy induced by mismatches in refractive index,
+Journal of Microscopy, Vol. 169, pp. 391-405 (3/1993)
+9. Nitschke, R.,Wilhelm, S., et al., A modified confocal la-
+ser scanning microscope allows fast ultraviolet ratio
+imaging of intracellular Ca
+2+ activity using Fura 2,
+Euro. J. Physiologie, Vol. 433: pp. 653-663, (1997)
+10. Oldenbourg, R. et al., Image sharpness and contrast
+transfer in coherent confocal microscopy, Journal of
+Microscopy Vol.172, pp. 31-39, (10/1993)
+11. Pawley, J., Handbook of Biological Confocal  Micros-
+copy, Plenum Press, 2
+nd Edition (1995)
+12. Stelzer, E.H.K.,  The intermediate optical system of la-
+ser scanning confocal microscopes ; Handbook of Bio-
+logical Confocal Microscopy, pp. 139-154, Plenum
+Press, 2
+nd Edition (1995)
+13. Stelzer, E.H.K., et. al., Nondestructive sectioning of
+fixed and living specimens using a confocal scanning
+laser fluorescence microscope: Microtomoscopy; SPIE,
+Vol. 809, pp. 130-136, (1987)
+14. Tanke, H.J., van Oostveldt, P., et al., A parameter for
+the distribution of fluorophores in cells derived from
+measurements of inner filter effect and reabsorption
+phenomenon, Cytometry Vol. 2, pp. 359-369 (6/1982)
+15. Tsien, R.Y., Waggoner, A., Fluorophores for Confocal
+Microscopy , Handbook of Biological Confocal Micros-
+copy, pp. 267-277, Plenum Press, 2
+nd Edition (1995)
+16. Webb, R.H., Dorey, C.K., The Pixelated Image, Hand-
+book of Biological Confocal Microssopy,
+pp. 55-66, Plenum Press, 2
+nd Edition (1995)
+17. Wilhelm, S., ber die 3-D Abbildungsqualitt eines
+konfokalen Laser Scan Mikroskops, dissertation, Fach-
+hochschule Kln, (1994)
+18. Wilson, T., Carlini, A.R., Three dimensional imaging in
+confocal imaging systems with finite sized detectors;
+Journal of Microscopy, Vol. 149, pp. 51-66, (1/1988)
+19. Wilson, T. , Carlini, A.R., Size of detector in confocal
+imaging systems; Optical Letters Vol.12, pp. 227-229,
+(4/1987)
+20. Wilson, T., Sheppardá C. J.R., Theory and Practice of
+Scanning Optical Microscopy, Academic Press, 2nd
+Edition (1985)
+
+===== PDF PAGE 30 =====
+xy
+z
+The Confocal
+Laser Scanning Microscope
+Overview
+• Scanning unit – moves  the focused laser beam across
+specimen line by line
+• Scanning speed: defines frame rate and pixel time, i.e. time
+for collecting photons
+• Pixel time: influences SNR of image; the longer the pixel
+time, the more photons per pixel, the less noise
+• 
+Pixel resolution: maximum resolution can be achieved if
+pixel size is set correctly (at least 4 x 4 pixels (x, y) per
+smallest detail), Ý directly adjustable  via scan zoom
+• 
+x/y frame size: variable from 4 x 2 up to 2048 x 2048 pixels;
+maximum frame rate with 512 x 512 pixels: 2.5 frames/sec
+(bidirectional scan ("    "); unidirectional  scan ("Ý"):
+slower by factor 2)
+ÝÝ
+Scanner
+• Light source – projected into specimen
+• Laser power: adjustable  via attenuation device
+(AOTF, MOTF) and tube current setting (Ar, ArKr only)
+ • 
+Lifetime Ar, ArKr: prolonged by using lower tube current;
+but laser noise will be increased, too (8 A = minimum noise)
+• Stand-by mode: prolongs laser lifetime; not suitable for
+image acquisition
+• 
+Laser line: can be chosen via selection device (AOTF, MOTF)
+dependent on fluorescent dye. Generally: the shorter the
+wavelength, the higher the resolution
+• 
+Application goals: (1) Protect specimen (reduction of dye
+bleaching and phototoxicity) by reduction of laser power.
+(2) Maximize fluorescence signal (higher SNR) by longer
+pixel dwell times or averaging
+Laser
+• Focusing the specimen – acquisition of image stacks
+or x-z sections
+• z interval: distance between two optical slices (step size
+of z motor: min.100 nm, Axioplan 2 imaging: 50 nm)
+• 
+Optimum z motor step size: 0.5 x optical slice thickness
+(compare: min. slice thickness for NA =1.4, n =1.52,
+λ = 488 nm: about 340 nm)
+• 
+Optional: fast z scanning stage (HRZ) = higher precision
+of z movement (step size 10 nm, reproducibility 30 nm,
+working range 200 µm)
+Z Control
+• Detector – pixelwise detection of photons emitted /
+reflected by the respective specimen detail
+• Parameters: "Detector Gain"= PMT high voltage,
+"Amplifier Offset"= black level setting, "Amplifier
+Gain"= electronic post-amplification
+• 
+Calibration: "Amplifier Offset" on image background
+(object-free area), "Detector Gain" according to scanned
+image (object) - setting aid = "Range Indicator"
+(Ý "Palette"). Goal: least number of overmodulated
+(red) and undermodulated (blue) pixels
+• 
+Signal amplification: First exploit "Detector Gain" slider
+before "Amplifier Gain" >1
+Photomultiplier (PMT)
+• Depth discrimination – confocal aperture to prevent
+detection of out-of-focus light (optical sectioning)
+• Diameter: determines thickness of optical slice; optimum
+diameter: 1 Airy unit = best trade-off between depth
+discrimination capability and efficiency
+• 
+x/y position: factory-adjusted for all beam path
+configurations; can be modified manually (Ý"Maintain-
+Pinhole")
+Pinhole
+• Fluorescence  beam path – definable  by combination
+of main (HFT) and secondary (NFT) dichroic mirrors and
+emission filters (EF) (Ý"Acquire"–"Config")
+• 
+HFT: separates excitation and emission light
+• NFT: effects spectral division of fluorescence emissions
+(e.g. NFT 545: reflects light of λ< 545nm and transmits
+light of λ >545nm)
+• 
+EF: determines bandwidth of fluorescence emission for
+the respective channel
+Beam Splitter
+• Optical image formation – determines image quality
+properties such as resolution (x, y, z)
+• Numerical Aperture (N.A.): determines imaged spot size
+(jointly with wavelength), and substantially influences
+the minimum optical slice thickness achievable
+• 
+Refractive index (n): match n (immersion liquid) with n
+(specimen mounting medium) for better image quality.
+• 
+Best confocal multifluorescence images (VIS, UV):
+use water immersion objectives with apochromatic
+correction (C- Apochromat)
+Objective Lens
+3 Steps to get a Confocal Image
+(LSM software running, lasers and HBO turned on)
+View specimen in VIS mode
+Focus the specimen in epi-fluorescence mode using the binocular and
+center the part of interest; select fluorescence filter cube according to
+application (e.g. FITC or Cy3) via SW (window "Microscope Control");
+match the field of view: change  to appropriate objective magnification
+(consider use of correct immersion medium).
+Load an LSM configuration
+Go to LSM mode (operate manual tube slider). Open window
+"Configuration control", click on "Store/Apply" and select a predefined
+configuration from list (Single Track). A click on "Apply" automatically
+sets up the system: laser lines, attenuation, filters (EF), beam splitters
+(HFT, NFT), pinhole diameter, detector settings (channels, gain, offset).
+Or: Click on "Reuse" button (stored image/image database window)
+to restore settings of a previous experiment.
+Scan an Image
+Click on "Find" button (right row in window "Scan Control")
+=> System automatically opens image  window, optimizes detector
+settings (matches PMT gain and offset to dynamic range of 8 or
+12 bit), and scans an image – ready!
+See operating manual for scanning a stack of slices, time series etc.
+1.
+2.
+3.
+How to enhance the Image Quality
+(Image scanned)
+"More signal!"
+• Change to longer pixel dwell times by reducing scanning speed
+• Use "Average" method: Calculation of "Sum"or "Mean" value of
+  pixels of consecutive "Line" or "Frame" scans.
+• Increase bandwidth of emission filter (e.g. LP instead of BP).
+• Enlarge pinhole diameter; Note: optical slice thickness increases
+accordingly.
+• Increase  excitation energy (laser power); But: pay attention to bleaching,
+saturation and phototoxic effects.
+"More details !"
+• Use  objective  with higher numerical aperture (NA); x/y-resolution
+~ 1/NA, z resolution ~ 1/NA
+2.
+• Increase "FrameSize"= number of pixels per line + lines per frame,
+e.g. 1024 x 1024 or 2048 x 2048 (min. 4 x 2).
+• Optimize scan zoom (Z), i.e. pixel size ≤ 0.25 x diameter of Airy disk
+(e.g.: M = 40x, NA 1.3,  λ = 488 nm => Z = 6).
+• Increase dynamic range (change from 8 to 12 bit per pixel).
+"More reliability!"
+• Use Multitracking: very fast switching of excitation wavelengths; prevents
+crosstalk of signals between channels; predefined configurations available.
+• Use ROI (Region Of Interest) function: significantly reduces excited area
+of specimen and increases acquisition rate at constant SNR; several ROIs
+of any shape can be defined and used simultaneously.
+1.
+2.
+3.
+Scanner
+Laser
+Z Control
+Objective Lens
+Beam Splitter
+Pinhole
+Photomultiplier (PMT )
+
+===== EXECUTABLE EXPERIMENT REVIEW (agent synthesis; not source text) =====
+身份：Carl Zeiss, Confocal Laser Scanning Microscopy: Principles，30页技术册；作者 Stefan Wilhelm、Bernhard Gröbler、Martin Gluch、Hartmut Heinz；作者页 PDF p29（印刷p28）。PDF元数据显示2000年生成，可据此描述本地版本，但不要把 metadata 创建年等同正式出版年。
+
+文献事实（以下为本地PDF 1-based页码）：
+p3：逐行扫描、逐像素PMT探测、数字化。512×512与2–3帧/s属于该册当年的仪器例子，不是现代仪器通用指标，也不是光谱温度场测量帧率。
+p4：针孔位于样品焦平面的共轭像面，抑制焦外光；点激发、点探测，全部图像需扫描，非相机同时成像。
+p5–6：光学切片、3D堆栈；理想适当条件下切片可小于500nm，但典型样品厚度约100μm的生物显微语境；相邻z层步长推荐切片厚度一半。不能用此证明毫米激光晶体全厚度亚微米测温。
+p8–10：分辨率由PSF、像差、物镜瞳孔照明、折射率失配、厚样品深度与散射影响；光学切片没有硬边界，FWHM外仍有贡献。
+p11：物方1 AU = 1.22λ/NA，此版本λ指激发波长；物理针孔直径须通过总检测放大倍率折算。不同仪器对AU的参照波长可不同，须按实际谱段/厂家定义。
+p12–15：假设理想均匀瞳照明、点状荧光物体、无显著像差。大孔PH>1 AU：横向激发PSF FWHM=0.51λexc/NA；轴向激发PSF FWHM=0.88λexc/[n−sqrt(n²−NA²)]。PH>1 AU时检测切片厚度约为sqrt{[0.88λem/(n−sqrt(n²−NA²))]² + [sqrt(2)n PH/NA]²}，PH为物方直径。不能将此式通过PH→0得到小孔极限。
+p13–15：PH<0.25 AU小孔极限，横向FWHM≈0.37λbar/NA；轴向FWHM≈0.64λbar/[n−sqrt(n²−NA²)]；λbar≈sqrt(2) λexc λem/sqrt(λexc²+λem²)。这些是FWHM而非Rayleigh点间隔。常用1 AU需相应有限针孔系数或实测，不能套最小孔极限系数。
+p14：镜面目标轴向系数0.45，有限厚荧光平面0.7，点荧光0.64；镜面扫焦结果不能直接等同荧光体的轴向采样分辨率。
+p26–28：针孔过小会强烈降低光子量/增加散粒噪声；延长像素时间或重复扫描提高SNR；1 AU是常见折衷值。
+p29：参考[8] Hell et al., Aberrations in confocal fluorescence microscopy induced by mismatches in refractive index, Journal of Microscopy 169, 391–405 (1993), DOI 10.1111/j.1365-2818.1993.tb03315.x。
+
+原版本疑点，不宜复述：
+1) p10将照明与探测PSF关系写成convolution并用⊗，点共焦强度PSF通常是两者点乘；同标题新版Zeiss手册已改为乘积。设计书写“联合采样权重”或正确乘积即可。
+2) p12低NA近似轴向系数写1.67；0.88精确式的低NA展开应约1.76（新版写1.77）。使用精确式避免错抄。
+
+设计建议/物理推论，以下非原册实验证明：
+A. 架构要明确：若只收集工作泵浦激发的宏观发光，共焦仅在检测臂，实际权重为检测PSF×泵浦发光分布，不能套标准“点激发+点探测”的最小分辨率。若使用弱探测激光形成点激发，应检测其自身加热、散射串扰与泵浦诱导背景。
+B. 对高折射率厚晶体，实际内部焦深不等于机械z位移。近轴估算Δztrue≈(ns/nimm)Δzstage，不能当高NA精确校正；需依据晶体折射率、波长、深度做光线/波动光学模型，结合已知晶体厚度与前后界面焦位置实测深度尺度。界面定标只给轴尺度，不证明局部PSF。
+C. 默认从平整抛光侧面或端面浅层开始，选择在荧光谱段有足够透过率的长工作距离物镜，NA与工作距离/像差折衷。生物用高NA油浸镜并非高n晶体天然最佳；不要无验证建议水浸匹配高n晶体。
+D. 实际信号 Fi(r0)=∫ Wi(r;r0) εi[T(r)] d³r，其中Wi包含激发、检测PSF、损耗等。F1/F2的温度反演得到有限体积内有效温度；一般不等于中心温度，也不等于温度的简单算术均值。两个谱段波长不同导致Wi不同，需要色差/PSF/谱段自吸收校正。
+E. 先做均匀温度场定标：同一真实晶体、同一光路/针孔/探测设置，恒温台覆盖计划范围不少于6个温点，加热和冷却各做一次、独立重复。外部接触温度计验证达到平衡。每温点测多个x,y,z，等温时若反演温度随深度变动，先校正R(T,z)或缩小有效测量深度。
+F. 测针孔0.5/1/2 AU对等温误差、SNR、热点峰值的影响；正式推荐从1 AU起而非直接极小孔。PSF先用亚分辨率荧光珠验证仪器，然后通过同折射率透明样板+相似厚度光程模型评估深度劣化；样板验证不等同真实晶体内部PSF。允许时选实际晶体内部孤立缺陷/发光点验证，或采用界面荧光薄层与模型联合给上界。报告实际可验证范围。
+G. 标尺/台阶/晶体实际厚度做坐标校准，测近、远两界面的焦位置；荧光双谱段色差需逐谱段标定、必要时将两谱段PSF匹配到共同较粗分辨率。匹配应对原始谱段强度做，再求比值。
+H. 用均温状态改变探测光强，检查反演温度与功率独立性和探测自身加热；做暗信号、泵浦开/探测关、泵浦关/探测开、双开背景矩阵，验证探测器线性及不饱和。
+I. 正式先固定点记录阶跃泵浦后的升温与稳定时间，再稳态点阵扫描。总时间≈Nx Ny Nz t_int + 移动/稳定/光谱读出开销。例如41×41、0.1s光谱积分仅积分就168.1s。必须记录真实单点时间戳、插入固定参考点，做正向/反向扫描检查漂移。全体点温度图是稳态重建，不是同时实时快照。
+J. 三维与瞬态：先二维指定平面，之后改变z形成切片；瞬态采用固定点/少点循环或与可重复泵浦触发同步的延时扫描，不能把一张数分钟扫描图标成单一瞬间。二维相机两带同步成像可做快图但会沿视线积分，需要另做层析/光学切片。
+K. 交叉验证：均温台是绝对温度标定；表面RTD/热电偶/校准红外仅验证表面。热传导模型与内部光学数据一致是互证，不能把模型本身作为内部温度的独立真实值。泵浦光斑、吸收率、冷却边界、夹持热接触都应实测或纳入不确定度。
+
+外部补充主来源（用于引用，不与本地页码混用）：
+Zeiss同标题新版37页手册（PSF乘积、约1.77低NA系数更正）：https://www.janelia.org/sites/default/files/Support%20Teams/Light%20Microscopy/Zeiss%20Confocal%20LSM%20Principles.pdf
+Zeiss技术注（角度相关焦移与球差，近轴比例仅近似）：https://pages.zeiss.com/rs/896-XMS-794/images/ZEISS-Microscopy_Immersion-Media-and-Clearing-Agents_Technology-Note.pdf
+Zeiss原厂文章（深度/折射率失配导致PSF非对称）：https://www.zeiss.com/microscopy/en/resources/insights-hub/foundational-knowledge/understanding-focus-depth-and-spherical-aberration.html
+Diel EE, Lichtman JW, Richardson DS, Nature Protocols 15, 2773–2784 (2020), DOI 10.1038/s41596-020-0360-2；作者机构库摘要支持z位移不等于真实焦平面位移及RI失配压缩/延伸体积：https://dash.harvard.edu/entities/person/4bedb4f4-829a-46fa-942c-6e6235f49fd7?f.author=Diel%2C+Erin+E.%2Cequals&f.dateIssued.min=2017&f.has_content_in_original_bundle=true%2Cequals&f.subject=General+Biochemistry%2C+Genetics+and+Molecular+Biology%2Cequals&spc.page=1
+
+
+===== ADDENDUM: PARENT'S FIXED-PUMP DETECTION-ONLY ARCHITECTURE =====
+总体：固定晶体和976/980nm主泵，凸透镜成像+像面移动光纤、再长WD物镜+移动针孔，可以实施泵浦发光区的横向成像光谱采样。一维轴向剖面和二维侧视有效温度映射有物理可行性；无主泵荧光区不可据此报告温度。必须将“映射坐标的横向像点定位”与“沿观察光轴的深度切片”分开。
+
+核心局限：检测端针孔给局部点发光体一个检测PSF，并不自动把均匀体荧光截成薄层。对横向无限、均匀薄荧光面，检测强度 ∝∫∫h_det(x,y,z−z0)dxdy；在平移不变、无截光、同收集效率的理想模型下该面积分近似不随离焦深度变，离焦后来自邻近横向区域的荧光仍填充针孔。整个均匀体是此响应沿深度积分。因此固定泵浦宏观发光+扫描检测孔仍有焦外串扰，真正权重还依赖泵浦柱宽度、上转换非线性、吸收/自吸收、界面损失等。
+
+准确推荐表述：‘检测端针孔/光纤空间选通的泵浦发光区一维剖面及二维侧视有效温度映射；该温度为已标定采样权重下的荧光比值有效温度。后续轴向调焦仅用于测试深度选择性，达到经验证的焦外串扰和深度误差指标后，才报告有限光学切片。’ 未达标时可称‘不同焦深条件下的加权映射’，不可称内部三维局域温度场或定量深度切片。
+
+二维扫描：移动针孔必须在实际共轭像面内；最好把可调孔和光纤输入作为同一刚性组件移动，或设置孔后集光/中继保证孔位移动不会额外改变耦合效率。只移动针孔、固定裸光纤通常导致视场依赖耦合变化。原先仅用移动光纤时，其纤芯在像面本身已是有限检测孔。需标定图像倍率、xy畸变、纤芯/针孔物方尺寸和各位置谱段比值平场。
+
+深度扫描：物镜沿观察光轴平移调焦，晶体和泵浦保持固定；旋转观察角得到不同投影，不等同深度切片。记录焦位置、真实深度换算与倍率变化，不可将机械位移直接作为晶体内部坐标。
+
+5×5×0.7mm晶体中心泵浦、观察距侧面2.5mm：
+1) 对无盖玻片干物镜的简单平面界面近轴估算，实际深度d对应空气等效深度d/ns，因此WD并非必须≥d；粗略空气间隙g≈WD−d/ns（实际厂商设计/物镜前端结构需确认）。不能把WD≥2.5mm写成保证穿透可行。
+2) 更关键是薄侧面截瞳。假设点在0.7mm厚度中央、距侧面d=2.5mm，直达侧面的收集锥在厚度方向最多±atan(0.35/2.5)=±7.97°。该方向有效NA上限约ns sin(7.97°)=0.1386ns，且离厚度中面越远越小。面内方向可有更大NA，PSF会各向异性。高NA长WD物镜无法绕过这条直达光几何约束；内部反射/多径可能再引入背景与鬼像。
+3) 深入2.5mm的高折射率界面球差可能远大于理想焦深，须从低NA实测建立实际响应，不应许诺数微米内部切片。光线焦移依赖角度：d'=d0*tan(arcsin(NA/nimm))/tan(arcsin(NA/ns))，近轴才化为折射率比例；不同角度不同焦深就是球差来源。
+4) 若转端面观察，穿透深度可降到0.7mm或0.35mm，但侧视泵浦轴剖面会变成泵轴方向积分/径向图，需明确输出坐标；若把泵浦移近侧面，原晶体几何和泵浦位置变了，边缘散热、表面温度梯度、反射/边界均须在模型中重设，不可把结果当中央泵浦温度。
+
+首轮可执行验证：
+a) 用表面荧光点/小珠测仪器xy、z检测PSF；再用能提供同n和同光程的透明样板（或实际晶体背面参考）评估深度劣化。实际晶体内部无孤立点时，不能从均匀上转换亮柱扫焦宽度直接宣称轴向PSF——它同时含泵浦柱厚度与响应。
+b) 除点源PSF，再测扩展荧光薄层的焦外背景，因为点源FWHM好不等于体源光学切片有效。对实际泵浦柱，应使用已测泵光/发光分布+检测PSF前向模型量化有效深度权重和焦外贡献。
+c) 恒温台下不同(x,y,z)检验FIR反演温度是否平坦；定标尽量低泵功率使光学激发自身加热低于误差目标。高功率若无法保证均温，不能仅靠台温宣称R(T,P)定标已知真T，应另证明局域温升可忽略/受控。
+d) 最小方案先完成一维剖面与焦平面二维数据，中心/两边固定点插入检查漂移；内部三维为通过空间响应验证后的扩展。
+
+完整点激发扩展：增加扫描弱980nm探针需要与检测孔共轭同步。但主泵也激发同一上转换荧光，简单叠加探针仍保留大体积背景；应探针调制+同步差分/锁相分離探针相关局域增量信号。上转换非线性使增量信号通常不等于探针单独信号，需对差分FIR在相同主泵强度背景下重新定标、验证温度与功率依赖，才能主张局域共焦温度。
