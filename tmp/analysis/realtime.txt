@@ -1,0 +1,378 @@
+=== PDF PAGE 1 ===
+Real-time measurement of temperature
+distribution inside a gain medium of
+a diode-pumped Er
+3+/Yb3+ 1.55 μm laser
+CHENCHEN XU,1,2 YIDONG HUANG,1 YANFU LIN,1 JIANHUA HUANG,1 XINGXONG GONG,1
+ZUNDU LUO,1 AND YUJIN CHEN1,*
+1Key Laboratory of Optoelectronic Materials Chemistry and Physics, Fujian Institute of Research on the Structure of Matter,
+Chinese Academy of Sciences, Fuzhou, Fujian 350002, China
+2Fujian Normal University, Fuzhou, Fujian 350007, China
+*Corresponding author: cyj@fjirsm.ac.cn
+Received 12 July 2017; accepted 28 July 2017; posted 3 August 2017 (Doc. ID 302215); published 24 August 2017
+A scheme to measure temperature distribution inside a gain
+medium of a diode-pumped solid-state laser is proposed
+based on the fluorescence intensity ratio technique. By re-
+cording the temperature-dependent upconversion fluores-
+cence related to the
+2H11∕2 → 4I15∕2 and 4S3∕2 → 4I15∕2
+transitions of Er3/.0135, the real-time temperature distribution
+inside an Er3/.0135:Yb3/.0135:LuAl3/.0133BO3/.01344 crystal end-pumped by
+a 976 nm diode laser can be measured while a 1.55 μm laser
+is operating. Influences of pump power, output power, and
+output mirror transmissivity on the temperature distribu-
+tion inside the gain medium are investigated. This scheme
+can conveniently and accurately measure the temperature
+distribution along the laser path in a rare-earth-doped gain
+medium in real time.
+© 2017 Optical Society of America
+OCIS codes: (140.3480) Lasers, diode-pumped; (140.3500) Lasers,
+erbium; (140.3580) Lasers, solid-state; (140.6810) Thermal effects.
+https://doi.org/10.1364/OL.42.003383
+Due to the quantum defects caused by energy differences
+between pump and laser photons, as well as multiphonon non-
+radiative transitions between some related multiplets of doped
+active ions, pump-induced heat is inevitably generated in gain
+media of solid-state lasers [ 1,2]. The pump-induced thermal
+effects limit the output power, operation efficiency, and beam
+quality and even cause the fracture of gain media [ 1,3].
+Temperature distribution can directly reflect the thermal effects
+in gain media. Therefore, when a laser is operating, the accurate
+and real-time measurement of temperature distribution inside
+the gain medium is meaningful. It is conducive to designing
+laser devices for reducing the thermal effects and then enhanc-
+ing the laser performance.
+Surface temperatures of gain media can be measured directly
+by infrared cameras [ 3,4]. However, this method cannot mea-
+sure the internal temperatures of gain media and the measured
+values are easily disturbed by the infrared signals reflected from
+other surfaces. Temperature distributions inside gain media can
+be simulated theoretically based on the finite-element-analysis
+method [5,6]. However, because some hypotheses are adopted
+in the establishment of the theoretical model and some uncer-
+tain thermo-optic coefficients are used in the simulating proc-
+ess, the result may have a deviation from the actual situation.
+Utilizing the temperature-dependent feature of fluorescence
+spectra originating from two thermally coupled levels (TCLs) of
+some rare earth (RE) ions, the fluorescence intensity ratio (FIR)
+technique can realize a temperature measurement at the lumi-
+nous point, where FIR represents the ratio of the integrated
+intensities I of the two fluorescence bands related to the
+TCLs. This technique can be used in harsh environments, such
+as high-voltage power stations and oil refineries [ 7,8], with its
+unique advantages of noncontact, high accuracy and sensitivity,
+and excellent anti-interference. For a diode-pumped solid-state
+laser with high pump power density, upconversion (UC) visible
+fluorescence is often observed in a gain medium doped with RE
+ions, such as Nd
+3/.0135, Yb3/.0135, Er3/.0135, Tm3/.0135, and Ho3/.0135[9–11]. UC
+fluorescence is easily detected because it can be seen by naked
+eyes and is generally away from the pump and laser wave-
+lengths. Then, by measuring the temperature-dependent UC
+fluorescence intensities originating from two TCLs of RE ions
+along the laser path in the gain medium, the temperature
+distribution along the path can be obtained when a laser is
+operating.
+The
+2H11∕2 and 4S3∕2 levels of Er3/.0135with energy separations
+of about 780 cm −1 are well-known TCLs [7,8]. UC green fluo-
+rescence bands originating from the 2H11∕2 → 4I15∕2 and
+4S3∕2 → 4I15∕2 transitions of Er3/.0135can be observed under ex-
+citation at 980 nm for an Er3/.0135∕Yb3/.0135-codoped material via the
+energy transfer from Yb3/.0135to Er3/.0135[8,10]. Presently, temper-
+ature measurements of Er3/.0135∕Yb3/.0135-codoped optical fibers and
+phosphors as optical temperature sensors and heat-sensitive
+materials have been widely investigated based on the FIR tech-
+nique [ 8,12]. In this work, we report on the first successful
+measurement of real-time temperature distribution along the
+Letter Vol. 42, No. 17 / September 1 2017 / Optics Letters 3383
+0146-9592/17/173383-04 Journal © 2017 Optical Society of America
+
+
+=== PDF PAGE 2 ===
+laser path inside an Er3/.0135:Yb3/.0135:LuAl3/.0133BO3/.01344 (Er:Yb:LuAB)
+crystal, which has been demonstrated as an efficient gain
+medium of a diode-pumped Er3/.0135∕Yb3/.01351.55 μm laser [ 2,13],
+while the laser is operating.
+A c-cut, 0.7 mm thick Er(1.1 at. %):Yb(24.1 at. %):LuAB
+crystal with cross section of 5m m × 5m m was polished and
+used in the spectral and laser experiments. To obtain a relation-
+ship between the intensity ratio of UC fluorescence bands origi-
+nating from the TCLs and the crystal temperature, the crystal
+was placed in a heating stove with a temperature control range
+from 300 to 540 K and an accuracy of /.00060.1 K . Unpolarized
+UC fluorescence of the whole crystal was collected and detected
+from the surface with a cross section of 0.7 mm × 5m m when
+a 980 nm laser diode (LD) (MDL-III-980, CNI) was used as
+the exciting source. In order to ensure a low thermal loading
+generated by the LD excitation and the uniformity of temper-
+ature in the whole sample, the pump power was limited to
+0.5 W and the spot diameter of the pump beam was about
+5 mm. Then, the UC fluorescence spectra from 510 to
+570 nm of the Er:Yb:LuAB crystal were recorded by a spec-
+trometer (FLS920, Edinburgh) in a temperature interval of
+30 K and are shown in Fig. 1(a). There are two discrete bands
+around 520 and 540 nm, corresponding to the transitions of
+2H11∕2 → 4I15∕2 and 4S3∕2 → 4I15∕2, respectively. For the sake
+of brevity, the transitions of 2H11∕2 → 4I15∕2 and 4S3∕2 →
+4I15∕2 are represented by 520 and 540 hereinafter, respectively.
+Because the populations at the 2H11∕2 and 4S3∕2 TCLs obey
+the Boltzmann thermal equilibrium, the relationship between
+the FIR, which is the ratio of I 520 and I 540 in this work, and the
+crystal temperature T can be expressed as [ 7,12]
+FIR /.0136I 520
+I 540
+/.0136σ520ω 520g520
+σ540ω 540g540
+exp
+/C18
+− Δ E
+kT
+/C19
+; (1)
+where σ is the emission cross section, ω is the angular frequency
+of the emission light, g is the degeneracy, k is the Boltzmann
+constant and ΔE is the energy gap between the 2H11∕2 and
+4S3∕2 levels. Figure 1(b) shows the integrated intensities of
+fluorescence bands around 520 and 540 nm for different crystal
+temperatures. Then, values of the FIR for different crystal
+temperatures can be calculated, as shown in Fig. 1(c). Based
+on Eq. ( 1), the relationship between the FIR and the crystal
+temperature was fitted to be
+FIR /.01368.67 exp
+/C18
+− 1083.6
+T
+/C19
+: (2)
+The fitted energy gap Δ E of the Er:Yb:LuAB crystal is
+753 cm −1 and close to the 780 cm −1 of the Er3/.0135:YAB crystal,
+which was fitted from the low-temperature spectra [ 14]. The
+relative temperature sensitivity S of FIR for the Er:Yb:LuAB
+crystal is expressed by [ 7,12]
+S /.01361
+FIR
+∂FIR
+∂T /.0136Δ E
+kT 2 : (3)
+The maximum S value for the crystal is about 1.2% K −1 at
+300 K and larger than those of many Er3/.0135-doped thermometric
+materials (generally lower than 1.1% K −1)[ 7,8], which shows
+that the Er:Yb:LuAB crystal has an excellent signal discrimina-
+bility for temperature detection.
+The laser experimental setup is shown in Fig. 2. A continu-
+ous-wave (cw) 976 nm fiber-coupled diode laser with a 100 μm
+diameter core was used as the pumping source, which excites
+the Yb
+3/.0135and Er3/.0135ions to the same levels as the 980 nm LD
+used above. The pumping beam was focused to a spot with a
+waist diameter of 100 μm in the Er:Yb:LuAB crystal by using a
+telescopic lens system (TLS). The uncoated Er:Yb:LuAB crystal
+and a 1.2 mm thick sapphire crystal were placed in a copper
+holder and closely contacted by two copper pieces with screws
+at front and rear faces. The copper holder was cooled by water
+at 293 K. The sapphire crystal was used as a heat sink to reduce
+the thermal effects of the gain medium and then improve the
+output laser performances [ 2,15]. An input mirror (IM) with
+90% transmissivity at 976 nm and 99.8% reflectivity at
+1.55 μm was directly deposited onto the front surface of the
+sapphire crystal. Two output mirrors (OMs) with identical cur-
+vature radii of 100 mm but different transmissivities of 1.7%
+and 5.0% at 1.55 μm were used. The cavity length was close
+to 100 mm. By using a convex lens with a focal length of
+27 mm, an image of the UC fluorescence signal emitting from
+a 0.7 mm × 5m m surface of the Er:Yb:LuAB crystal was
+obtained with a magnification of 1.4. A high-resolution optical
+fiber spectrometer with a fiber diameter of 100 μm (QE65000,
+Ocean Optics) was used to scan the image and record the
+fluorescence signal point by point when a 1.55 μm laser was
+operating. Scattering signals originating from the pump and
+fundamental lasers were obstructed by a filter.
+Fig. 1. (a) Temperature-dependent UC fluorescence spectra of the
+Er:Yb:LuAB crystal recorded from 300 to 540 K when a 980 nm LD
+was used as the exciting source. (b) Integrated intensities I of fluores-
+cence bands around 520 and 540 nm at different crystal temperatures.
+(c) FIR between 520 and 540 nm fluorescence bands as a function of
+crystal temperature.
+Fig. 2. Experimental setup of the 976 nm diode-pumped
+Er:Yb:LuAB 1.55 μm laser, and the UC fluorescence measurement.
+3384 Vol. 42, No. 17 / September 1 2017 / Optics Letters Letter
+
+=== PDF PAGE 3 ===
+Figure 3 shows the cw output power realized in the
+Er:Yb:LuAB crystal versus incident pump power for different
+OM transmissivities. For the 5.0% transmissivity, a laser with a
+maximum output power of 0.86 W and a slope efficiency of
+22% was obtained at an incident pump power of 5.11 W.
+The incident pump threshold was 1.17 W. For the 1.7% trans-
+missivity, a laser with a maximum output power of 0.76 W and
+a slope efficiency of 19% was obtained at an incident pump
+power of 5.11 W. The incident pump threshold was
+0.87 W. The beam quality factors M
+2x and M 2y were measured
+to be about 5.71 and 5.33 at a pump power of 5.11 W, respec-
+tively, and they changed with the pump power.
+When the pump power was 5.11 W and OM transmissivity
+was 5.0%, UC fluorescence signals emitting from different
+positions along the laser path with an interval of 0.07 mm were
+detected through moving the probe of the optical fiber
+spectrometer along the crystal image after the convex lens.
+The result is shown in Fig. 4(a). Based on Eq. ( 2), the corre-
+sponding temperature at each position can be calculated with a
+maximum error of /.000612 K and is shown in Fig. 4(b).A ta
+pump power of 5.11 W, the highest temperature in the crystal
+is 710 K at the position of 0.35 mm from the input surface.
+The temperature at the input surface of the Er:Yb:LuAB crystal
+is 450 K and about 100 K lower than that at the output surface.
+Under identical experimental conditions, temperature distribu-
+tions for pump powers of 3.74 and 2.63 W were also measured
+and are also shown in Fig. 4(b). Compared with the result
+obtained at a pump power of 5.11 W, the trend of temperature
+distribution inside the crystal is similar but the highest temper-
+atures decrease 150 and 220 K, respectively.
+The temperature distribution measured in this work is
+similar to that inside the Er:Yb:YAB crystal calculated by
+the finite-element-analysis method [ 15], in which the highest
+temperature in the crystal with sapphire cooling was 800 K
+when the pump power was 5 W. According to [ 15], the tem-
+perature distribution in the crystal without sapphire cooling is
+similar to the distribution of the pump power density [see
+Fig. 4(c)]. For diode-pumped Nd:YAG and Yb:YAG lasers,
+the reported highest temperatures in these crystals were
+393 and 335 K with pump power densities of 191 and
+318 W ∕mm
+2 [4,6], respectively. They are much lower than
+that (491 K) measured in this work when the pump power den-
+sity is 335 W ∕mm
+2, which corresponds to an incident pump
+power of 2.63 W. Compared with the Nd3/.0135and Yb3/.0135lasers,
+more absorbed pump power is converted to heat for the
+Er:Yb:LuAB laser because it has a larger quantum defect
+(37% with respect to 24% of an 807 nm diode-pumped
+Nd
+3/.01351.06 μm laser and 6% of a 976 nm diode pumped
+Yb3/.01351.04 μm laser, respectively) and a lower fluorescence
+quantum efficiency of the upper laser level 4I13∕2 (7% with
+respect to about 90% of both Nd3/.0135:YAG and Yb3/.0135:YAG
+crystals).
+Cyclic measurements of the temperature at the position of
+0.28 mm from the input face of the Er:Yb:LuAB crystal, where
+the strongest UC fluorescence signal was observed, were per-
+formed by changing the pump power. The result indicates that
+the temperature measurement in this work has a good repeat-
+ability, as shown in Fig. 4(d).
+At a certain pump power, the output power of the laser can
+be gradually changed by adjusting the cavity alignment.
+Temperature variation at the position of 0.28 mm was mea-
+sured when the pump power was fixed at 5.11 W, but the out-
+put power was changed. As shown in Fig. 5, when the output
+power was reduced from 0.86 to 0.17 W, the temperature at
+the measured position increased from 694 to 870 K. The frac-
+tional thermal load η
+h can be expressed as [ 1]
+ηh /.01361 − ηp
+/C20
+/.01331 − ηl /.0134ηr
+λp
+λf
+/.0135ηl
+λp
+λl
+/C21
+; (4)
+where ηp is the pump quantum efficiency, ηl is the laser extrac-
+tion efficiency defined as the fraction of excited ions extracted
+by stimulated emission, η
+r is the fluorescence quantum effi-
+ciency of the upper laser level, λp is the pump wavelength,
+Fig. 3. Output power realized in the Er:Yb:LuAB crystal as a
+function of an incident pump power at 976 nm for different OM
+transmissivities T .
+Fig. 4. (a) UC fluorescence spectra at different positions Z along
+the laser path from the input surface of the Er:Yb:LuAB crystal for
+a pump power of 5.11 W and an OM transmissivity of 5.0%.
+(b) Temperature distribution along the laser path inside the Er:Yb:
+LuAB crystal for different pump powers. (c) Estimated distribution
+of the pump power density in the Er:Yb:LuAB crystal for a pump
+power of 5.11 W and a waist diameter of 100 μm. (d) Cyclic mea-
+surements of the temperature at the position of 0.28 mm from the
+input surface of the Er:Yb:LuAB crystal when the pump power was
+changed back and forth.
+Letter Vol. 42, No. 17 / September 1 2017 / Optics Letters 3385
+
+=== PDF PAGE 4 ===
+λf is the average fluorescence wavelength, and λl is the laser
+wavelength. Because ηr of the Er:Yb:LuAB crystal is lower than
+10% [ 2], ηh in the crystal increases with the decrement of ηl ,
+which is proportional to the reduction of the output power at a
+fixed pump power. Therefore, with the reduction of the output
+power, the temperature inside the crystal increases, as shown in
+Fig. 5. It also means that an efficient laser operation would be
+beneficial in reducing the fractional thermal load in the crystal.
+The temperature distribution at a pump power of 5.11 W
+and the temperature at the position of 0.28 mm for different
+pump powers were also measured at OM transmissivity of
+1.7%. The results obtained at OM transmissivities of 1.7%
+and 5.0% are compared in Figs. 6(a) and 6(b), which exhibit
+similar variation trends with maximum measurement errors of
+/.000612 K . With the increment of the pump threshold, the heat
+generated in the crystal is increased. Therefore, the highest tem-
+perature inside the crystal at an OM transmissivity of 5.0% is
+about 40 K higher than that at an OM transmissivity of 1.7%,
+as shown in Fig. 6(a), while the pump thresholds are 1.17 and
+0.87 W for the former and later, respectively.
+In summary, a measurement of temperature distribution
+along laser path inside an Er:Yb:LuAB crystal has been success-
+fully realized when a 1.55 μm laser is operating. The highest
+temperature inside the crystal is 710 K when the pump power is
+5.11 W and the output power is 0.86 W. Compared with the
+existing thermometries, this method can realize the real-time
+temperature measurement inside a gain medium with advan-
+tages of high accuracy and excellent anti-interference. This
+method may be used to measure the temperature distributions
+along any direction inside RE-doped gain media with UC fluo-
+rescence emitting from TCLs during laser operation.
+Funding. National Key R&D Program of China; Ministry
+of Science and Technology of the People ’s Republic of
+China (MOST) (2016YFB0701002); Strategic Priority
+Research Program, Chinese Academy of Sciences (CAS)
+(XDB20000000).
+REFERENCES
+1. T. Y. Fan, IEEE J. Quantum Electron. 29, 1457 (1993).
+2. Y. Chen, Y. Lin, J. Huang, X. Gong, Z. Luo, and Y. Huang, Opt.
+Express 23, 12401 (2015).
+3. S. Chénais, F. Druon, S. Forget, F. Balembois, and P. Georges, Prog.
+Quantum Electron. 30, 89 (2006).
+4. J. Didierjean, E. Herault, F. Balembois, and P. Georges, Opt. Express
+16, 8995 (2008).
+5. E. Marmois, V. Cardinali, G. L. Touzé, and B. L. Garrec, Proc. SPIE
+7721, 77210O (2010).
+6. P. A. Loiko, K. V. Yumashev, N. V. Kuleshov, and A. A. Pavlyuk, Opt.
+Laser Technol. 44, 2232 (2012).
+7. S. A. Wade, S. F. Collins, and G. W. Baxter, J. Appl. Phys. 94, 4743
+(2003).
+8. X. Wang, Q. Liu, Y. Bu, C.-S. Liu, T. Liu, and X. Yan, RSC Adv. 5,
+86219 (2015).
+9. V. Ostroumov, T. Jensen, J.-P. Meyn, G. Huber, and M. A. Noginov,
+J. Opt. Soc. Am. B 15, 1052 (1998).
+10. F. Song, L. Han, H. Tan, J. Su, J. Yang, J. Tian, G. Zhang, Z. Cheng,
+and H. Chen, Opt. Commun. 259, 179 (2006).
+11. G. Hansson, A. Callenas, and C. Nelsson, Advanced Solid-State
+Lasers (Optical Society of America, 1993), p. 446.
+12. L. Li, L. Zheng, W. Xu, Z. Liang, Y. Zhou, Z. Zhang, and W. Cao, Opt.
+Lett. 41, 1458 (2016).
+13. Y. J. Chen, Y. F. Lin, J. H. Huang, X. H. Gong, Z. D. Luo, and Y. D.
+Huang, Opt. Express 18, 13700 (2010).
+14. I. Földvári, E. Beregi, A. Munoz, F. R. Sosa, and V. Horváth, Opt.
+Mater. 19, 241 (2002).
+15. Y. J. Li, J. X. Feng, P. Li, K. S. Zhang, Y. J. Chen, Y. F. Lin, and Y. D.
+Huang, Opt. Express 21, 6082 (2013).
+Fig. 5. Cyclic measurements of the temperature at the position of
+0.28 mm from the input surface of the Er:Yb:LuAB crystal when the
+output power was decreased and increased at a fixed pump power of
+5.11 W and an OM transmissivity of 5.0%.
+Fig. 6. (a) Temperature distributions inside the Er:Yb:LuAB crystal
+for different OM transmissivities when the pump power was 5.11 W.
+(b) Temperatures at the crystal position of 0.28 mm for different
+pump powers and OM transmissivities.
+3386 Vol. 42, No. 17 / September 1 2017 / Optics Letters Letter
