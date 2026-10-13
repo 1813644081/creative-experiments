@@ -1,0 +1,1144 @@
+=== PDF PAGE 1 ===
+Optics & Laser Technology 176 (2024) 110896
+Available online 28 March 2024
+0030-3992/© 2024 Elsevier Ltd. All rights reserved.
+Full length article 
+The temperature profile within Er
+3 +
+: Yb
+3 +
+: LuAl
+3
+(BO
+3
+)
+4 
+crystal: Insights 
+uncovered by a combined theoretical and experimental study 
+Weiling Fu
+a , b , f
+, Dawei Qi
+a , d , f
+, Tingting Zhong
+a
+, Yujin Chen
+c
+, Yidong Huang
+c
+, 
+Shuiquan Deng
+a , e , * 
+a
+State Key Laboratory of Structural Chemistry, Fujian Institute of Research on the Structure of Matter (FJIRSM), Chinese Academy of Sciences (CAS), Fuzhou 350108, 
+Fujian, China 
+b
+College of Chemistry and Material Science, Fujian Normal University, Fuzhou 350117, Fujian, China 
+c
+Key Laboratory of Optoelectronic Materials Chemistry and Physics, FJIRSM, CAS, Fuzhou 350002, Fujian, China 
+d
+College of Physics and Energy, Fujian Normal University, Fuzhou 350117, Fujian, China 
+e
+Fujian Science and Technology Innovation Laboratory for Optoelectronic Information of China, Fuzhou 350108, Fujian, China 
+f
+Fujian College, University of Chinese Academy of Sciences, Fuzhou 350108, Fujian, China   
+ARTICLE INFO  
+Keywords: 
+Three-beam model 
+Temperature distribution 
+Heat Effect 
+Optical Crystals 
+ABSTRACT  
+This work reports a measured temperature profile along the pump light beam inside the Er
+3 +
+:Yb
+3 +
+: LuAl
+3
+(BO
+3
+)
+4 
+crystal and the simulated ones. The temperature profile featured by a high and asymmetrical peak structure 
+shows rather localized nature with respect to its transversal distribution. By scrutinous examination of the dis -
+crepancies between the experimental and simulated ones, a) a heat deposition mechanism elucidating the steady 
+state of local heat generations and various heat transfers was suggested; b) a three-beam of lights model together 
+with a formula for analyzing the fractional thermal load was developed, which leads to a good agreement be -
+tween the simulated and experimental temperature profiles. The new formula provides a more transparent tool in 
+physics to evaluate the various energy losses; The model can easily be adapted to solve the thermal problem in a 
+laser medium, in particular when a medium show unignorable absorption effect for the laser signal.   
+1. Introduction 
+Diode-pumped solid-state lasers in the end-pumped configuration 
+own the advantages of high efficiency, compactness, and reliability 
+[1,2] . In the design of such lasers, a careful consideration must be taken 
+to mitigate the thermal effects such as thermooptic aberrations, lensing 
+and birefringence, which lower the efficiency of laser operation, reduce 
+the output beam quality and change the resonating condition [3 – 5] . The 
+heat generation can be caused by quantum defects [6,7] , stimulated 
+emission [8] , energy transfer upconversion [9,10] , excited-state ab -
+sorption [11] , cross-relaxation [12] , and fluorescence process [7] etc. In 
+its extreme case, if extrinsic defects and/or quantum defects [3] exist, 
+these effects may become serious, which lead to local stress fracture, 
+melting, and other damages to the laser crystal. Thus, the thermal 
+management has long been of critical importance in the design of laser 
+systems. In previous experimental studies, usually only the surface 
+temperatures were measured by using infrared camera [5,13] . While a 
+recent study made an important progress in measuring the temperature 
+distribution within a crystal [14] . This makes it possible to study 
+quantitatively the roles of various factors involved in the heat genera -
+tion process, if theoretical simulations can be done to scrutinize the 
+various models and assumptions. 
+In principle, the pump power, the absorption coefficients, the 
+dispersion of the light beam, the presence of defects on the light path and 
+other parameters as well as their temperature dependence, if any, may 
+influence the actual temperature distribution within a crystal. Due to the 
+complexity of the problem, model analysis approach has been tried from 
+the beginning up to the recent time to unravel it [15 – 17] . In the last few 
+years, with the development of computational technique, a number of 
+numerical simulations have been used to study the temperature distri -
+butions within the laser crystals [2,5,18 – 23] . While these investigations 
+obtained qualitative knowledge of the various factors such as pump 
+power, absorption coefficient, the radius of light beam waist and cooling 
+conditions etc. in governing the temperature distribution 
+[2,5,18,20 – 23] , the quantitative knowledge have remained elusive due 
+to the lack of experimental data. 
+* Corresponding author. 
+E-mail address: sdeng@fjirsm.ac.cn (S. Deng).  
+Contents lists available at ScienceDirect 
+Optics and Laser Technology 
+journal homepag e: www.else vier.com/loc ate/optlaste c 
+https://doi.org/10.1016/j.optlastec.2024.110896 
+Received 27 November 2023; Received in revised form 7 March 2024; Accepted 21 March 2024   
+
+=== PDF PAGE 2 ===
+Optics and Laser Technology 176 (2024) 110896
+2
+In this work, we report a temperature profile along the light path 
+through the Er
+3 +
+:Yb
+3 +
+: LuAl
+3
+(BO
+3
+)
+4 
+(Er:Yb:LuAB) crystal as measured 
+by using the fluorescence intensity ratio technique [14] , and a detailed 
+comparison between the experimental result and the simulated ones. A 
+new model of three-beam of lights was proposed based on the combined 
+experimental and theoretical studies, which revealed the quantitative 
+roles of the various lights and material parameters affecting the tem -
+perature distribution. Our work provides clues for improving the design 
+of lasers with respect to the thermal problem. The approach can also be 
+used to evaluate a crystal with regard to its thermal parameters, possible 
+impurities as well as self-absorption of laser signals. 
+2. Experimental method and simulation models 
+2.1. Experimental conditions 
+A temperature profile along the pump laser beam through the Er:Yb: 
+LuAB crystal was measured by using the fluorescence intensity ratio 
+technique [14] with the experimental setup shown in Fig. 1 . A contin -
+uous wave laser of 976 nm generated by a fiber-coupled diode laser with 
+a 100 μ m core diameter was used as a pumping source. The pumping 
+beam was focused by using a telescopic lens system into the laser crystal, 
+and had a beam waist diameter of 160 μ m. An uncoated Er:Yb:LuAB 
+crystal (5 × 5 × 0.74 mm
+3
+) and a closely contacted 2.4 mm thick sap -
+phire plate were mounted on a copper holder cooled with water of ~ 
+293 K. A film deposited onto the front surface of the sapphire as an input 
+mirror has a transmissivity of 90 % at 976 nm and a reflectivity of 99.8 % 
+at 1.55 μ m. An output mirror with a curvature radius of 100 mm and a 
+transmissivity of 1.7 % at 1.55 μ m was used. The cavity length was 
+adjustable around 100 mm. The UC fluorescence signal emitting from 
+the 5 × 0.74 mm
+2 
+surface of the crystal was first focused by using a 
+convex lens with a focal length of 27 mm and then filtered to remove the 
+scattering signals from the pump light and the laser. The image and the 
+clean fluorescence signals were measured with a point-by-point scan 
+mode by using a high-resolution optical fiber spectrometer (QE6500, 
+Ocean Optics), while the crystal was in a resonating operation for a 1.55 
+μ m laser. 
+2.2. The geometrical and numerical models 
+In this work, the experimentally measured Er:Yb:LuAB crystal has a 
+section area of 5 × 5 mm
+2 
+perpendicular to the beam direction, which is 
+approximately three orders larger than the light spot. As the heat gen -
+eration occurs mainly on the light path, thus a cylinder model having a 
+rotational symmetry around the beam was created to simulate the 
+combined object of sapphire and crystal ( Fig. 2 ). Shown in Fig. 2 is a 
+model consisting of sapphire and crystal wafers having the same 
+thicknesses as the measured sample, i.e. , L1 = 2.4 and L2 = 0.74 mm, for 
+sapphire and crystal, respectively. The radius of the cylinder model was 
+chosen to be 2 mm. The pump beam enters into the sapphire-crystal 
+model through the ∂
+b 1 
+surface with the output laser leaving the model 
+from the opposite surface ∂
+b 2 
+(see Fig. 2 and Fig. 1 ). 
+The heat generation and deposition mechanisms in a gain medium 
+can be rather complicated. In principle, if the photons decay into an 
+appreciable number of phonons (multi-phonon relaxation [24] ) through 
+various processes such as fluorescence [7] , up-conversion [9,10] , 
+excited state absorption [11] , cross-relaxation [12] , concentration 
+quenching [7] etc., heat results. Such processes may involve the re -
+laxations either from the pump band to the upper metastable level or 
+from the lower laser level to the ground state, or from the dead sites or 
+from other defects, etc. Among these relaxations, the processes involving 
+the laser levels are generally considered as the main source of heating 
+[3,25] . In contrast to the heat generation mechanisms, the deposition 
+mechanism has less been noticed. The traditional thinking emphasizes 
+the role of thermal conductivity of a host material, which does not take 
+into account the microscopic details of the heat transport [26] . This 
+work used a phenomenological steady-state heat equation as follows to 
+probe the temperature distribution in the crystal. 
+∇ ⋅ ( k ∇ T ) + Q ( r , z ) = 0 (1) 
+In our simulation, the temperature and space dependence of the 
+thermal conductivity, k , is not considered. And Q ( r , z ) represents the 
+heat source with a unit of W / m
+3
+, ( r , z ) is the position coordinate of a 
+point in the cylindrical coordinate system (See Fig. 2 ). 
+According to the experimental setup, the whole surface of the 
+sapphire-crystal compound (SCC) model was assumed to have good 
+contacts with heat sinks except for the ∂
+b 1 
+and ∂
+b 2 
+surfaces which are 
+exposed to the air. Since the physical properties of the crystal and the 
+sapphire remain virtually unchanged within the experimental ranges, 
+the important physical parameters used in this work are considered as 
+constants ( Table 1 ). 
+In this work, as the SCC was mounted on a copper holder with water 
+cooling at ~ 293 K, a perfect thermal contact was assumed for the sur -
+face specified by ∂   ∂
+b 1
+  ∂
+b 2 
+and the heat sink copper (see Fig. 2 and 
+Fig. 1. Sketch of the experimental setup; the thick green line denotes the pump 
+light, and the thin green line indicates the possible residue pump light; the thick 
+and thin red lines indicate the lasers in the resonant cavity and the output one, 
+respectively. (For interpretation of the references to colour in this figure legend, 
+the reader is referred to the web version of this article.) 
+Fig. 2. The geometrical details of the simulation model and the chosen cylin -
+drical coordinate system with its origin locating at the center of the interface 
+between sapphire and the crystal. The surface of the whole sapphire-crystal 
+compound (SCC) is denoted with a symbol ∂ , while the two small circular 
+surfaces with R = 1 mm at the two ends of the SCC are denoted by ∂
+b 1 
+and ∂
+b 2 
+for z = -2.4 mm and z = 0.74 mm, respectively. 
+W. Fu et al.                                                                                                                                                                                                                                      
+
+=== PDF PAGE 3 ===
+Optics and Laser Technology 176 (2024) 110896
+3
+Fig. S18 in Supplementary material (SM)). For this reason, the following 
+boundary condition was assumed for this surface: 
+T = 293K (2) 
+As the surfaces specified by ∂
+b 1 
+and ∂
+b 2 
+were directly exposed to the 
+air, the Robin-type boundary condition as follows was applied to ∂
+b 1 
+and 
+∂
+b 2
+, respectively, 
+n ⋅ (  k ∇ T ) = h ( T
+s
+  T
+air
+) (3)  
+where n is the outward normal vector of an interested surface, h is the 
+heat transfer coefficient between the surface, ∂
+b 1
+( ∂
+b 2
+), and air, which is 
+assumed as a constant in this work, h = 50 W / m
+2
+K [31] . T
+s 
+denotes the 
+temperature on a surface ∂
+b 1 
+or ∂
+b 2
+; and T
+air
+= 293 K is the air 
+temperature. 
+As discussed above, the heat generation originates from the non -
+radiative dissipation of the absorbed light energy proportional to the 
+Beer-Lambert factor, exp (   α z ) , while the heat distribution along the 
+directions perpendicular to the beam path was assumed to follow a 
+Gaussian law, exp (   2 r
+2
+/ w
+2
+p
+( z )) , due to the local nature of the heat 
+generation. The final form of Q ( r , z ) as widely used in the literatures 
+[32,33] is given as Eq. (4) , 
+Q ( r , z ) =
+2 α ξP
+in
+π w
+2
+p
+( z )[ 1   exp (   α L ) ]
+exp (   α z ) exp
+[
+  2 r
+2
+/
+w
+2
+p
+( z )
+]
+(4)  
+where P
+in
+, ξ , α and L denote the power of an incident light, e.g., bump 
+light etc., the fractional thermal loading of a crystal [3] , the absorption 
+coefficient of a crystal for a specific light and the thickness of the crystal, 
+respectively (see Fig. 2 ). The w
+p
+( z ) is the beam radius function 
+describing the beam shape of a laser along the beam direction in the 
+crystal [34] : 
+w
+p
+( z ) = w
+p 0
++ θ
+p
+| z   z
+0
+| (5) 
+Where w
+p 0 
+denotes the waist radius of a beam; θ
+p 
+is the far-field half- 
+angle of a beam, z
+0 
+is the focal plane position of a beam. See SM1, SM4, 
+SM7 for more explanations of the simulation parameters). 
+To understand the experimental temperature distributions, the 
+COMSOL Multiphysics ® software was used to solve Eq. (1) with various 
+boundary conditions as described in Eqs. (2)-(3) or otherwise as 
+described in a specific simulation case. In general, if the experimental 
+value for a parameter, e.g., P
+in
+, is known, we use it, otherwise we treat it 
+as an adjustable parameter estimated from experimental conditions. The 
+workflow of the numerical simulation and the analysis is given in SM7. 
+2.3. The evaluation of the simulation results 
+To evaluate quantitatively the quality of the simulation, we use Eq. 
+(6) which measures pointwise the relative deviation of a simulation 
+curve from an experimental one. 
+R =
+̅̅̅̅̅̅̅̅̅̅̅̅̅̅ ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ ̅
+∑
+w
+i
+[ y ( z
+i
+)   y
+′
+( z
+i
+)]
+2
+∑
+w
+i
+[ y
+′
+( z
+i
+)]
+2
+√
+× 100% (6) 
+Where in Eq. (6) , z represents the coordinate along the z axis ( Fig. 2 ), 
+y and y ’ are the values of the simulated and experimental temperatures 
+at the same coordinate z
+i
+. w
+i 
+denotes the weight at point z
+i
+, which can be 
+unit or e.g., a reciprocal of the error at a point, etc. Eq. (6) is widely used 
+as a weighted factor to evaluate the quality of a simulation for an 
+experimental data set in structure science [35] . 
+3. Results and discussion 
+3.1. Experimental results 
+Shown in Fig. 3 is one measured temperature profile (Exp-SCC) along 
+the beam path in the crystal with an incident pump power of P
+in 
+= 5.43 
+W. It is obvious that the lowest temperatures (~427.0 – 412.0 K) occur 
+at the two ends of the beam path, while in the intermediate a broad peak 
+centered at z = ~ 0.24 mm appears. This general feature has also been 
+observed in previous theoretical simulations [2,21,23] , however, not yet 
+well understood. In particular, if one takes a close look at the experi -
+mental curve, one can find a strong asymmetry of the big blunt peak and 
+a possible dip at its summit together with a low and broad peak occur -
+ring at the end of the right tail. In order to optimize the experimental 
+conditions, three independent measurements with different parameters 
+have also been made. To understand the observed experimental features 
+quantitatively, simulations based on different models together with in- 
+depth analysis have been performed. Here, we analyze only the results 
+for the first measurement, the analyses for the rest three are given in 
+SM5. 
+3.2. Simulation vs. experiment: Main features of the temperature profile 
+3.2.1. Simulation models and heat transfers at steady state 
+To explain the observed temperature distribution, we first consider a 
+one-beam laser model as done in many previous studies [2,5,18 – 23] and 
+different crystal models imposed on various boundary conditions. The 
+used parameters are given in Table 1-2 . The results shown in Fig. 4 a) 
+and b) are the transversal and longitudinal temperature distributions 
+obtained from the SCC model with the boundary conditions specified by 
+Eq. (2) and (3) (Sim-SCC). The longitudinal distribution is also shown in 
+Fig. 4 c) with a solid black line (Sim-SCC) together with the experi -
+mental result (Exp-SCC). In Fig. 4 c), the result obtained from a bare 
+crystal model without sapphire, but with identical boundary condition 
+as in Sim-SCC imposed on the surface of the model, is also shown (Sim- 
+Cry). Shown in the inset of Fig. 4 c) is the result obtained from the same 
+model as in Sim-Cry, but with a boundary condition specified by Eq. (3) 
+imposed on the whole surface of the model. 
+As one can see from Fig. 4 a) and b), the temperatures on the light 
+path are obviously higher than those at its surroundings, a phenomenon 
+Table 1 
+Physical parameters of the Er:Yb:LuAB crystal [27 – 29] and the sapphire [30] .  
+Material Density, ρ (kg/ 
+m
+3
+) 
+Specific heat, C
+p 
+(J/(kg*K)) 
+Thermal conductivity, k 
+(W/(m*K)) 
+Er:Yb:LuAB 
+Crystal  
+3840.0  660.0  4.7 
+Sapphire  3970.0  760.0  42.0  
+Fig. 3. The measured temperature profile along the pump beam path in Er:Yb: 
+LuAB crystal. 
+W. Fu et al.                                                                                                                                                                                                                                      
+
+=== PDF PAGE 4 ===
+Optics and Laser Technology 176 (2024) 110896
+4
+resulting from the interaction between laser and crystal. This result 
+implies that there is a net deposition of heat when the steady state is 
+reached due to the balance of generated heat and that flowing away 
+from the light path. Intuitively, the much higher temperature on the 
+light path than those of the surrounding copper heat sinks means that 
+the heat flows outward in any transversal directions. However, the sit -
+uation along the longitudinal direction z is more complicated. In view of 
+either the simulated temperature profile (Sim-SCC) or the measured one 
+(Exp-SCC), it is ready to infer that when the system reaches its steady 
+state the heat flows leftward on the left side of the main peak, while on 
+the right side the heat flows rightward, and at the top of the peak the 
+opposite heat flows are all balanced, accordingly the temperature rea -
+ches the maximum. Shown in Fig. 4 d) is a scheme illustrating the heat 
+deposition process in the neighborhood of an active center lying at the 
+left side of the main peak. To understand quantitatively the heat transfer 
+process, the heat transferred across the various surfaces denoted in Fig. 2 
+and Fig. S18 in the SM are calculated, which indicate that a major 
+amount of heat on the light path is transferred from the side surface, 
+while that flowing outside of the surface exposed to the air accounts for 
+only ~ 4.0 % of the total heats flowing out, revealing the importance of 
+the copper heat sinks. The calculated directions of the heat-flows shown 
+in Fig. S19 provided numerical evidence to the heat deposition mecha -
+nism shown in Fig. 4 d) (See all details in SM6). 
+3.2.2. The overall agreement of main features 
+As shown by the compared simulation and experimental results, Sim- 
+SCC vs. Exp-SCC in Fig. 4 c), some main features of the experimental 
+temperature distribution are well reproduced by the simulation. These 
+include mainly: 1) the occurrence of a main peak; 2) the asymmetry of 
+the peak shape; 3) roughly speaking, the position and height of the main 
+peak. More quantitatively, one can also find from the Exp-SCC curve that 
+the temperature nearby the incident end (z = ~ 0.03 mm), T
+in
+, is 426.9 
+K, higher than T
+out 
+= 411.7 K nearby the output end (z = ~ 0.73 mm). 
+This trend ( T
+in 
+> T
+out
+) was correctly reproduced by our simulation, 
+which obtained the respective values of 404.6 K and 368.7 K at the 
+corresponding locations, respectively. Some of these features have also 
+been observed in previous simulations [2,21,23] , but have never been 
+explained. Extracting the data at 200 uniformly spaced sample points 
+from the experimental and the simulated curves, respectively, we ob -
+tained a R value of 6.70 % by using Eq. (6) , which indicates an overall 
+agreement of main features between Exp-SCC and Sim-SCC, but not the 
+details. 
+3.2.3. The cause for the main peak 
+The analysis above shows an overall agreement between Sim-SCC 
+and Exp-SCC. However, the cause for the occurrence of the main peak 
+has remained unexplained. 
+It is well-known that the pump power decays exponentially in the 
+beam direction of the light due to the absorption (see SM Fig. S1 ), 
+implying a decreasing trend of the temperature. 
+However, this is true only in the right side of the peak (see Fig. 4 b, c). 
+Our simulation result shown in the inset of Fig. 4 c indicates clearly that 
+if the crystal is cooled only by air, the heat deposition becomes more 
+serious, and the peak-like profile does not occur. In fact, as one can see 
+from the simulation curve of Sim-Cry in Fig. 4 c, even if the crystal is 
+cooled by cooper heat sinks plus air as described by Eq. (2) and (3) , the 
+peak feature is still missing, though the temperatures are overall pulled 
+down dramatically. A simple comparison between the solid line (Sim- 
+Table 2 
+The parameters and their values.  
+Parameters Value 
+Incident pump power, P
+in 
+5.43 W 
+Fractional thermal load, ξ 0.40 
+Waist radius of pump beam, w
+p 0 
+80.0 μ m 
+Focal plane position of the pump beam, z
+0 
+0.27 mm 
+Far-field half-angle of the pump beam, θ
+p 
+0.40, ref. [21] 
+Absorption coefficient of Er:Yb:LuAB crystal, α 4500 m
+-1 
+( λ = 976 nm), ref. [36]  
+Fig. 4. The simulated results with a one-beam model: a) The simulated temperature distribution on a section perpendicular to the beam direction at z = 0.27 mm 
+(Sim-SCC); b) The simulated temperature distribution in the (r, z) plane with an azimuthal angle θ = 0 in the cylindrical coordinate system (see Fig. 2 ) (Sim-SCC); c) 
+The simulated results with various cooling configurations compared to the experimental one; d) A scheme illustrating the heat deposition mechanism in the 
+neighborhood of a dopant on the beam z-axis, the red point shows the heat generation, the arrows show the directions of the heat flows. (For interpretation of the 
+references to colour in this figure legend, the reader is referred to the web version of this article.) 
+W. Fu et al.                                                                                                                                                                                                                                      
+
+=== PDF PAGE 5 ===
+Optics and Laser Technology 176 (2024) 110896
+5
+SCC) and the broken line (Sim-Cry) in Fig. 4 c reveals that it is the 
+presence of the sapphire which results in the peak structure of the 
+temperature profile. To reveal the importance of the sapphire, we 
+simulated a crystal without sapphire by varying the heat transfer coef -
+ficient in the Robin-type boundary condition imposed on ∂
+b 1 
+at z = 0 (see 
+Fig. S2 (a) and (b) for the difference between Sim- h -Cry with Sim- h - 
+SCC). The results shown in Fig. S2 (a) indicate that when h is increased 
+the temperature on the center of ∂
+b 1 
+will gradually decrease, and 
+accordingly a peak will be formed at somewhere with z > 0 in the 
+crystal. Thus, the ∂
+b 1 
+surface plays a role of a thermal resistor whose 
+effect can be dramatically reduced in the SCC configuration. The 
+generated heat on the beam line can easily be transported to the surface 
+of the sapphire due to its much higher thermal conductivity than that of 
+the air and crystal. As a consequence, the Robin-type condition in the 
+case of SCC becomes insignificant ( Fig. S2 (b)). The above analysis has 
+also suggested that the much more rapidly lowering of temperature 
+nearby z = 0 on the simulation curve ( Fig. 4 c) than that of the experi -
+mental one may result from the approximation of perfect thermal con -
+tact between the sapphire and crystal. 
+3.3. Simulation vs. experiment: Minor features of the temperature profile 
+3.3.1. Minor features beyond one-beam model: The role of laser beam 
+parameters 
+Our discussions in the previous section focus on the main features of 
+the temperature profiles. As one can see from Fig. 4 c, the simulated 
+curve for SCC (Sim-SCC) differs from the experimental one (Exp-SCC) in 
+a) the overall lower curve at the right-side of the peak (Sim-SCC) than 
+that of the Exp-SCC plus the missing of a small broad peak in the tail end 
+(Disc-a); b) the height and the position of the main peak (Disc-b). In fact, 
+part of these features has appeared in earlier simulation curves 
+[2,21,23] , however, due to either the lack of experimental data or the 
+neglect of these features, the implications of these features have never 
+been explored, which leads to an oversimplified one-beam model and 
+exaggerated fractional thermal load coefficient etc. 
+According to Eq. (4) and (5) , one may expect that the global pa -
+rameters P
+in
+, ξ , α and L may also influence the global features of the 
+temperature profile. However, as P
+in 
+and L are decided by experimental 
+conditions, they were set as the experimental values whenever possible. 
+The role of ξ and α will be investigated in the later sections. We now 
+discuss the influence of the beam radius function w
+p
+( z ) . As shown in Eq. 
+(5) , this function depends on three parameters, i.e. , w
+p 0
+, the waist radius; 
+θ
+p
+, the far-field half-angle of a light beam, and z
+0 
+the focal plane posi -
+tion. Eq. (5) clearly shows that w
+p 0 
+is a basic parameter for a light beam, 
+and is decided mainly by the telescopic lens system TLS ( Fig. 1 ). Thus, 
+any errors of the TLS and its relative position with respect to the SSC etc. 
+may result in the error of w
+p 0
+. Fig. 5 (a) shows that the variations of the 
+peak temperature caused by the error, Δ w
+p 0
+= ± 10 μ m , is ~ ∓ 12 . 4 K , 
+which is too small to explain Disc-b, ~27.5 K. As can be seen from Fig. 5 
+(b) and (c), the changes of both z
+0 
+and θ
+p 
+can result in the changes of the 
+peak temperature by ~ ∓ 38 . 6 K and ~ ∓ 10 . 0 K , respectively, within the 
+indicated ranges. We have tried to use a larger range of θ
+p
+, which is a 
+little unrealistic, and obtained a larger temperature change of ~ ∓ 21.2 
+K ( Fig. S3 ), a value still smaller than ~ 27.5 K. It is clear that the 
+decrease of w
+p 0
+, z
+0 
+and θ
+p 
+can all result in an increase of the peak tem -
+perature, which is understandable because the decrease of these pa -
+rameters means thinner beam and higher energy density. However, 
+except for z
+0
+, the resulting changes of the peak temperature due to the 
+other two parameters are not enough to explain the Disc-b. More 
+importantly, the increase of the peak temperature due to the lowering of 
+z
+0 
+is always accompanied by the leftward shift of the main peak thus 
+enlarging the Disc-b instead of reducing it. 
+The Disc-a is a more challenging problem. As shown in Fig. 5 , the 
+largest change of Δ T ( z ) = ~2.8 K at z = 0.73 mm was obtained by 
+changing the parameter z
+0 
+( Fig. 5 b), which is far too small to explain the 
+difference between Sim-SCC and Exp-SCC, Δ T = 43 . 0 K at z = 0.73 mm 
+( Fig. 4 c), not to mention the low broad peak at the tail of the Exp-SCC 
+curve. This result and those given in the last paragraph indicate 
+clearly that the variations of w
+p
+( z ) cannot explain the Disc-a and Disc-b, 
+if the used parameters are confined in the reasonable ranges. 
+3.3.2. Fractional thermal load evaluated by a new formula and two-beam 
+simulations 
+To understand these disagreements, one needs to analyze those 
+factors which are not considered in the currently used model. As shown 
+in Fig. 1 , the pump light may not be completely absorbed (see also 
+Fig. S1 in SM) in one-time passing through the crystal, the reflected 
+pump light beam exists due to the incomplete absorption and the pres -
+ence of the OM in the resonating cavity ( Fig. 1 ). Furthermore, the re -
+flected light may not perfectly coincide with the incident pump light 
+beam, which will definitely affect the temperature profile within the 
+crystal. Besides, there may exist other processes of energy loss such as 
+non-stimulated radiation emission etc. The microscopic mechanism of 
+the heat generation in a laser crystal is a rather complicated issue. The 
+previous studies focusing on the various origins have resulted in rather 
+complicated expressions for the fractional thermal load ξ [3,7,9,10,37] , 
+which are difficult to evaluate and to apply to calculate the various 
+contributions from different channels. Among these studies, Brown [7] 
+provided a rather comprehensive analysis and suggested a rule to check 
+the reliability of his formulas, that is energy conservation. In this work, 
+we use an approach different from the previous ones. We start from the 
+energy conservation condition and focus on non-thermal channels (See 
+SM1 in SM for details). The result is as follows, 
+ξ = 1   η
+c
+ 
+N
+f
+η
+P
+N
+1
+⋅
+λ
+P
+λ
+f
+ 
+N
+L
+η
+P
+N
+t
+⋅
+λ
+P
+λ
+L
+(7) 
+Where the calculation of ξ has considered the various energy losses 
+discussed in Sec. SM1 of SM; the percentage of the absorbed energy by 
+Fig. 5. The influences of the beam radius function w
+p
+( z ) due to the variations of (a) the waist radius of the light beam, w
+p 0
+; (b) the position of the focal plane, z
+0
+; (c) 
+the far-field half-angle, θ
+p
+. The values for unspecified parameters are chosen the same as given in Table 2 . 
+W. Fu et al.                                                                                                                                                                                                                                      
+
+=== PDF PAGE 6 ===
+Optics and Laser Technology 176 (2024) 110896
+6
+the crystal with respect to the total incident pump energy is described by 
+η
+P
+; the percentage of all energy losses except for the heat and radiation 
+with respect to the absorbed energy is denoted by η
+c
+; N
+t 
+is the total 
+number of photons of incident pump laser plus the reflected one with a 
+wave length λ
+P
+; N
+f 
+is the number of photons with an average wave length 
+λ
+f 
+in the non-stimulated radiation emission process; N
+L 
+is the number of 
+photons with a wave length λ
+L 
+produced in the stimulated emission 
+process (laser). The precise mathematical definition of these parameters 
+can be found in Sec. SM1 of SM. It is clear from Eq. (7) that if one as -
+sumes η
+c
+= 0, and neglects the non-stimulated emission, N
+f
+= 0, and 
+assume a complete absorption of incident energy, η
+P
+= 1, the well- 
+known formula [38] , ξ = 1   λ
+P
+/ λ
+L
+, can be obtained. Hence, the value 
+estimated from this simple formula represents an upper bound of the 
+thermal effect. The actual value of ξ should be lower than that estimated 
+from 1   λ
+P
+/ λ
+L
+. In the current case, it is ~ 0.37, a value widely used in the 
+literatures [21,23] . The value, 0.40, given in Table 1 is only a fitting 
+parameter optimized with respect to the experimental curve. It is larger 
+than 0.37 and thus is unrealistic. 
+According to the analysis above, one may need to consider the re -
+flected pump light in the simulations. Before we proceed, we want to 
+point out that a multi-beam model was used by Mescia et al. [10] to 
+simulate the temperature distribution in a cladding-pumped Er
+3 +
+/Yb
+3 +
+- 
+codoped fiber amplifiers. In their case, the forward and backward pump 
+lights are considered together with the radiation from space. Besides, 
+they considered also the z-dependence of the fractional thermal load due 
+to the cooperative upconversion at high Er
+3 +
+/Yb
+3 +
+concentration. The z- 
+dependence is not a problem in our case, because the doping concen -
+tration of Er
+3 +
+in our crystal is rather low, ~ 1.5 at%, and in particular 
+our crystal is very thin, 0.74 mm, compared to the ~ 20 m in the fiber 
+amplifiers simulated by Mescia et al. 
+The difficulty of the one-beam model leads us to consider a second 
+source of heat generation due to the reflected pump light (two-beam 
+model), and to probe the influences of ξ and the beam radius function 
+w
+p
+( z ) by varying only the focal plane position z
+0
+. The results are shown 
+in Fig. S5 . It is clear that the increase of ξ will lift the overall temperature 
+profile, while the increase of z
+0 
+will shift the main peak rightward and 
+lower temperature profile (see also Fig. 5 (b)). As can be seen from 
+Fig. S5 (b), the problem of Disc-b can be remedied under the condition of 
+ξ < 0.37, however, the problem of Disc-a remains, even if ξ = 0.37 is 
+used ( Fig. S5 (c)). This fact indicates that some important source of heat 
+generation may still be ignored in our simulations. 
+One concern is that whether the problem of Disc-a can be solved by 
+introducing impurities in the crystal. Our simulations with models 
+containing metal impurities such as Al, or Pt, the constituent elements of 
+the crucible used to grow the Er:Yb: LuAB single crystals, exclude this 
+possibility (See Sec. SM3 for details). 
+3.3.3. Simulation results based on a three-beam model 
+On the basis of the above simulations, we propose a three-beam 
+model for describing the heat generation within our crystal, i.e. , bm-1: 
+the major component describing the incident pump light; bm-2: the 
+minor component describing the reflected pump light; bm-3: the minor 
+component describing a laser. The parameters given in Table 3 were 
+chosen according to the simulation results discussed above. In 
+particular, the power of bm-2 was calculated based on the absorption of 
+the crystal (see Fig. S1 ) using Beer-Lambert ’ s law, which resulted in a 
+value of P
+in 
+= ~ 0.2 W for bm-2. The P
+in 
+= ~ 89.4 W for bm-3 was 
+estimated from the output power of the device, ~ 0.76 W and the 
+transmittance, ~1.7 % of the OM. The fractional thermal load ξ = 0.2 
+was chosen for both bm-1 and bm-2, while that chosen for bm-3 was ~ 
+0.009. These two parameters and the others given Table 3 were adjusted 
+but not globally optimized during the simulations. The simulated result 
+with these parameters is shown in Fig. 6 . As can be seen from Fig. 6 , the 
+problems of both Disc-a and Disc-b are solved almost perfectly, which 
+can also be seen from the calculated very small R value of ~ 0.96 %. The 
+significantly lower ξ values indicate that the actual thermal dissipation 
+of the pump light is much lower than that (~0.4) estimated in previous 
+works [13,18,21,23,31,32] , but in good agreement with that (0.22 ~ 
+0.24) estimated for Nd:YVO
+4 
+by Brown [7] . Though the thermal dissi -
+pation of a laser is very low, its heat deposit within the cavity is not 
+negligible. The analyses of the experimental data from the other three 
+measurements are parallel, which gives further justification of our three- 
+beam model (see SM5 for details). One issue is that whether one can 
+simulate the experimental results by ignoring the reflected pump light 
+(bm-2). We have tried to use a two-beam model, bm-1 + bm-3, to 
+simulate the experimental results (Exp-2 – 4). In all cases, the simulation 
+curves at the output end are too low to account for the measured curves 
+(See Fig. S12-S14 in SM for the details). 
+3.4. The temperature and intensity dependence of the absorption 
+coefficient 
+As the absorption coefficient α is a global parameter (see Eq. (4) ), a 
+question may arise that whether its temperature dependence can 
+significantly influence the temperature profile. The temperature 
+dependence of α i.e. , α ( T ) , has been thoroughly discussed by Koechner 
+[39] and studied with the Yb:YAG slab crystals [40,41] , which revealed 
+an exponentially decayed temperature influence in reference to a devi -
+ation from a base temperature. In our case, the temperature variation 
+along the light path is within ~ 80.0 K, so one would not expect a sig -
+nificant influence of T on α . In fact, even if we consider α ( T ) by using the 
+experimental temperature dependence obtained from Er:Yb:YAl
+3
+(BO
+3
+)
+4 
+crystal [42] , the simulations with the one-beam and two-beam model 
+still failed to explain Disc-a, which justify our choice of the three-beam 
+model (See SM4 for the results and detailed discussions). 
+The nonlinear intensity dependence of the absorption on the light 
+intensity, I , suggests also an intensity dependence of the total absorption 
+Table 3 
+The values of parameters used for simulating the general features of the tem -
+perature distribution.  
+Parameters bm-1 bm-2 bm-3 
+P
+in 
+ibid. Table 2 0.2 W 89.4 W 
+ξ 0.2 0.2 0.009 
+w
+p 0 
+ibid. Table 2 40.0 μ m 40.0 μ m 
+z
+0 
+0.2 mm 0.65 mm 0.34 mm 
+θ
+p 
+0.45 0.45 0.30 
+α ibid. Table 2 ibid. Table 2 43.4 m
+-1 
+(1550 nm), ref. [36]  
+Fig. 6. The experimental temperature profile vs. simulated result based on the 
+three-beam model. 
+W. Fu et al.                                                                                                                                                                                                                                      
+
+=== PDF PAGE 7 ===
+Optics and Laser Technology 176 (2024) 110896
+7
+coefficient α
+T
+, i.e. , α
+T
+= α + β I + ⋯ [43,44] , where α is the linear part, 
+and β the nonlinear part of the absorption coefficient, which can enter 
+into the Beer-Lambert law as a total absorption coefficient [44] . Such an 
+assignment has also been corroborated by quantum model calculations 
+[45 – 47] . These studies have also shown that β is a very small quantity at 
+the order of ~ 10
+-10 
+m/W. Using this value and the values of the power 
+P
+in 
+given in Table 3 for the pump laser (bm-1) and the laser signal (bm-3) 
+in the three-beam model, one can estimate the nonlinear deviations, β I , 
+as 0.027 and 1.7 m
+  1 
+for bm-1 and bm-3, respectively, which are much 
+smaller than the corresponding linear coefficients, 4500 and 43.4 m
+  1 
+(See Table 3 ). Considering that the intensity of the pump laser decays 
+exponentially with its path length, the actual nonlinear deviation of the 
+absorption coefficient of the pump laser will be much smaller than 0.027 
+nearby the output end. Hence, the neglect of the nonlinear deviation of 
+the absorption coefficient is a good approximation. 
+4. Conclusion 
+Our studies of temperature distribution within the Er:Yb: LuAB 
+crystal by using experimental measurements together with sophisticated 
+theoretical simulations have revealed a very localized character of the 
+heat generation along the light path within the crystal, which is so 
+serious that the crystal can easily be damaged if no good cooling mea -
+sures were taken. A heat deposition mechanism was proposed to 
+describe the steady state of heat generation and heat transfers. The 
+observed peak structure and large asymmetry of the temperature profile 
+on the two sides of the peak were shown to be the result of the decaying 
+pump energy due to the absorption, and the very different cooling 
+conditions created by the sapphire and air. By scrutinous comparison of 
+the simulated temperature profile with the experimental one, we pro -
+posed a three-beam of lights model which takes into account the thermal 
+effects of incident pump light, its reflected residue after absorption and 
+the laser within the resonance cavity. The latter two components were 
+completely ignored in previous works. A formula of fractional thermal 
+load was derived based on the analysis of various possible energy pro -
+cesses within the crystal, with which a reasonable value of the parameter 
+was obtained. Our study indicates that though the absorption of the 1.55 
+μ m laser by the crystal is indeed small, its thermal effect cannot be 
+neglected. The possible effect of impurities was excluded by our simu -
+lations with designed impurity containing models. The influence of the 
+temperature dependence of the absorption coefficient was shown to be 
+too small to explain the Disc-a. The simulated temperature profile with 
+the three-beam of lights model and better parameters is in rather good 
+agreement with the experimental one. Our study provides a practical 
+approach to analyzing the thermal effect within an optical crystal, and 
+suggests important factors needed to be considered in designing a laser. 
+The developed approach can also be applied to evaluate a laser medium 
+regarding to its thermal behavior, possible impurities and self- 
+absorption of the laser signals. 
+CRediT authorship contribution statement 
+Weiling Fu: Writing – review & editing, Visualization, Validation, 
+Data curation, Formal analysis, Software. Dawei Qi: Data curation, 
+Software, Validation, Visualization. Tingting Zhong: Writing – original 
+draft, Visualization, Software. Yujin Chen: Investigation, Resources. 
+Yidong Huang: Supervision, Resources, Investigation. Shuiquan Deng: 
+Writing – review & editing, Supervision, Resources, Project adminis -
+tration, Funding acquisition, Conceptualization. 
+Declaration of competing interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Data availability 
+Data will be made available on request. 
+Acknowledgments 
+This work was financially supported by the National Natural Science 
+Foundation (NSF) of China (22031009, 21921001, 22075282); the Na -
+tional Key R & D Program of China (2021YFB3601501); the Fujian Sci -
+ence & Technology Innovation Laboratory for Optoelectronic 
+Information of China (2021ZR123). 
+Appendix A. Supplementary material 
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.optlastec.2024.110896 . 
+References 
+[1] B.I. Denker, B.I. Galagan, S.E. Sverchkov, A.M. Prokhorov, Erbium (Er) glass lasers, 
+in: B. Denker, E. Shklovsky (Eds.), Handbook of Solid-State Lasers, Woodhead 
+Publishing, 2013, pp. 341-358. Doi: 10.1533/9780857097507.2.341. 
+[2] Z. Xiong, Z.G. Li, N. Moore, W.L. Huang, G.C. Lim, Detailed investigation of 
+thermal effects in longitudinally diode-pumped Nd:YVO
+4 
+lasers, IEEE J. Quantum 
+Electron. 39 (8) (2003) 979 – 986, https://doi.org/10.1109/JQE.2003.814371 . 
+[3] T.Y. Fan, Heat generation in Nd : YAG and Yb : YAG, IEEE J. Quantum Electron. 29 
+(6) (1993) 1457 – 1459, https://doi.org/10.1109/3.234394 . 
+[4] W.A. Clarkson, Thermal effects and their mitigation in end-pumped solid-state 
+lasers, J. Phys. D: Appl. Phys. 34 (16) (2001) 2381 – 2395, https://doi.org/10.1088/ 
+0022-3727/34/16/302 . 
+[5] S. Ch ´enais, F. Druon, S. Forget, F. Balembois, P. Georges, On thermal effects in 
+solid-state lasers: The case of ytterbium-doped materials, Prog. Quantum Electron. 
+30 (4) (2006) 89 – 153, https://doi.org/10.1016/j.pquantelec.2006.12.001 . 
+[6] S.R. Bowman, Low quantum defect laser performance, Opt. Eng. 56 (1) (2016), 
+https://doi.org/10.1117/1.Oe.56.1.011104 . 
+[7] D.C. Brown, Comprehensive four-level laser model with power conservation Part I: 
+Laser Kinetics and application to Nd: YVO
+4
+, IEEE J. Quantum Electron. 48 (12) 
+(2012) 1527 – 1535, https://doi.org/10.1109/jqe.2012.2222871 . 
+[8] D.C. Brown, Heat, fluorescence, and stimulated-emission power densities and 
+fractions in Nd:YAG, IEEE J. Quantum Electron. 34 (3) (1998) 560 – 572, https:// 
+doi.org/10.1109/3.661467 . 
+[9] S. Bjurshagen, R. Koch, Modeling of energy-transfer upconversion and thermal 
+effects in end-pumped quasi-three-level lasers, Appl. Opt. 43 (24) (2004), https:// 
+doi.org/10.1364/ao.43.004753 . 
+[10] L. Mescia, P. Bia, S. Girard, A. Ladaci, M.A. Chiapperino, T. Robin, A. Laurent, 
+B. Cadier, M. Boutillier, Y. Ouerdane, A. Boukenter, Temperature-dependent 
+modeling of cladding-pumped Er3 + /Yb3 + -codoped fiber amplifiers for space 
+applications, J. Lightwave Technol. 36 (17) (2018) 3594 – 3602, https://doi.org/ 
+10.1109/jlt.2018.2841799 . 
+[11] W.R. Kerridge-Johns, M.J. Damzen, Analysis of pump excited state absorption and 
+its impact on laser efficiency, Laser Phys. Lett. 12 (12) (2015), https://doi.org/ 
+10.1088/1612-2011/12/12/125002 . 
+[12] M. Lukac, S. Cencic, K. Nemes, Influence of direct and cross-relaxation pumping 
+processes on the output energy and thermal load of an Er:YAG laser, Appl. Opt. 32 
+(36) (1993) 7399 – 7401, https://doi.org/10.1364/AO.32.007399 . 
+[13] J. Boudeile, J. Didierjean, P. Camy, J.L. Doualan, A. Benayad, V. Menard, 
+R. Moncorge, F. Druon, F. Balembois, P. Georges, Thermal behaviour of ytterbium- 
+doped fluorite crystals under high power pumping, Opt. Express 16 (14) (2008) 
+10098 – 10109, https://doi.org/10.1364/oe.16.010098 . 
+[14] C. Xu, Y. Huang, Y. Lin, J. Huang, X. Gong, Z. Luo, Y. Chen, Real-time 
+measurement of temperature distribution inside a gain medium of a diode-pumped 
+Er
+3 +
+/Yb
+3 +
+1.55 μ m laser, Opt. Lett. 42(17) (2017) 3383-3386. Doi: 10.1364/ 
+OL.42.003383. 
+[15] U.O. Farrukh, A.M. Buoncristiani, C.E. Byvik, An analysis of the temperature 
+distribution in finite solid-state laser rods, IEEE J. Quantum Electron. 24 (11) 
+(1988) 2253 – 2263, https://doi.org/10.1109/3.8568 . 
+[16] U.O. Farrukh, P. Brockman, Temperature distribution in side- and end-pumped 
+laser crystal rods: temporal and spatial variations, Appl. Opt. 32 (12) (1993) 
+2075 – 2081, https://doi.org/10.1364/AO.32.002075 . 
+[17] L. Cini, J.I. Mackenzie, Analytical thermal model for end-pumped solid-state lasers, 
+Appl. Phys. B: Lasers Opt. 123 (12) (2017) 273, https://doi.org/10.1007/s00340- 
+017-6848-y . 
+[18] R. Weber, B. Neuenschwander, M. Mac Donald, M.B. Roos, H.P. Weber, Cooling 
+Schemes for Longitudinally Diode Laser-Pumped Nd:YAG Rods, IEEE J. Quantum 
+Electron. 34(6) (1998) 1046-1053. Doi: 10.1109/3.678602. 
+[19] M. Sabaeian, H. Nadgaran, L. Mousave, Analytical solution of the heat equation in 
+a longitudinally pumped cubic solid-state laser, Appl. Opt. 47 (13) (2008) 
+2317 – 2325, https://doi.org/10.1364/AO.47.002317 . 
+[20] P.A. Loiko, K.V. Yumashev, N.V. Kuleshov, A.A. Pavlyuk, Comparative thermal 
+analysis of Nd- and Yb-doped YAG and KGdW laser crystals under diode- and 
+W. Fu et al.                                                                                                                                                                                                                                      
+
+=== PDF PAGE 8 ===
+Optics and Laser Technology 176 (2024) 110896
+8
+flashlamp-pumping, Opt. Laser Technol. 44 (7) (2012) 2232 – 2237, https://doi. 
+org/10.1016/j.optlastec.2012.02.033 . 
+[21] Y. Li, J. Feng, P. Li, K. Zhang, Y. Chen, Y. Lin, Y. Huang, 400 mW low noise 
+continuous-wave singlefrequency Er,Yb:YAl
+3
+(BO
+3
+)
+4 
+laser at 1.55 μ m, Opt. Express 
+21(5) (2013) 6082-6090. Doi: 10.1364/OE.21.006082. 
+[22] Y. Wang, Q. Wang, Q. Na, Y. Zhang, M. Gao, M. Zhang, Analysis of the thermal 
+effect in diode end-pumped Er:YAG lasers by using Finite Element Method, 2017 
+International Conference on Optical Instruments and Technology: Advanced Laser 
+Technology and Applications 10619 (2018) 1061906. Doi: 10.1117/12.2295879. 
+[23] Y. Chen, Y. Lin, Z. Yang, J. Huang, X. Gong, Z. Luo, Y. Huang, Eye-safe 1.55 µ m Er: 
+Yb:YAl3(BO3)4 microchip laser, OSA, Continuum 2 (1) (2019), https://doi.org/ 
+10.1364/osac.2.000142 . 
+[24] Y.V. Orlovskii, K.K. Pukhov, T.T. Basiev, T. Tsuboi, Nonlinear mechanism of 
+multiphonon relaxation of the energy of electronic excitation in optical crystals 
+doped with rare-earth ions, Opt. Mater. 4 (5) (1995) 583 – 595, https://doi.org/ 
+10.1016/0925-3467(95)00012-7 . 
+[25] M. Cesaria, Chapter 3 - Physics of inorganic upconverting nanophosphors and their 
+relevance in applications, in: S. Thomas, K. Upadhyay, R.K. Tamrakar, N. 
+Kalarikkal (Eds.), Upconversion Nanophosphors, Elsevier, 2022, pp. 49-102. Doi: 
+10.1016/B978-0-12-822842-5.00012-1. 
+[26] N. Luo, J. Xu, X. Cheng, Z. Li, Y. Huang, M.-H. Whangbo, S. Deng, M. Hong, High 
+partial thermal conductivity of luminescence sites: a crucial factor for reducing the 
+heat-induced lowering of the luminescence efficiency, J. Mater. Chem. C 9 (40) 
+(2021) 14439 – 14443, https://doi.org/10.1039/d1tc02287c . 
+[27] H.D. Jiang, J. Li, J.Y. Wang, X.B. Hu, H. Liu, B. Teng, C.Q. Zhang, P. Dekker, 
+P. Wang, Growth of Yb:YAl3(BO3)4 crystals and their optical and self-frequency- 
+doubling properties, J. Cryst. Growth 233 (1 – 2) (2001) 248 – 252, https://doi.org/ 
+10.1016/S0022-0248(01)01562-7 . 
+[28] V.M. Denisov, L.T. Denisova, I.A. Gudim, V.A. Temerov, G.S. Patrin, N.V. Volkov, 
+L.G. Chumilina, Heat capacity of YAl3(BO3)4 in the range of 329 – 1051 K, Dokl. 
+Phys. 58 (12) (2013) 533 – 534, https://doi.org/10.1134/S1028335813120070 . 
+[29] J.L. Blows, P. Dekker, P. Wang, J.M. Dawes, T. Omatsu, Thermal lensing 
+measurements and thermal conductivity of Yb:YAB, Appl. Phys. B: Lasers Opt. 76 
+(3) (2003) 289 – 292, https://doi.org/10.1007/s00340-002-1092-4 . 
+[30] Single Crystal Sapphire. https://www.kyocera.com.cn/prdct/fc/product/pdf/s_c_s 
+apphire.pdf . (Accessed 13 April 2023). 
+[31] F. Huang, N. Jiang, Y. Wang, W. Dong, Y. Niu, Calculation and comparison of 
+thermal effect in laser diode pumped slab lasers with different pumping structures, 
+Semicond. Lasers Appl. III (2007), https://doi.org/10.1117/12.756556 . 
+[32] Y.F. Chen, T.S. Liao, C.F. Kao, T.M. Huang, K.H. Lin, S.C. Wang, Optimization of 
+fiber-coupled laser-diode end-pumped lasers: Influence of pump-beam quality, 
+IEEE J. Quantum Electron. 32 (11) (1996) 2010 – 2016, https://doi.org/10.1109/ 
+3.541689 . 
+[33] J. Yu, H.X. Meng, T.F. Jin, Modeling of thermal lensing in CW end-pumped solid- 
+state lasers, High-Power Lasers: Solid State, Gas, Excimer, and Other Advanced 
+Lasers 2889 (1996) 171-177. Doi: 10.1117/12.253264. 
+[34] T.Y. Fan, A. Sanchez, Pump source requirements for end-pumped lasers, IEEE J. 
+Quantum Electron. 26 (2) (1990) 311 – 316, https://doi.org/10.1109/3.44963 . 
+[35] B.H. Toby, Rfactors in Rietveld analysis: How good is good enough? Powder Diffr. 
+21 (1) (2012) 67 – 70, https://doi.org/10.1154/1.2179804 . 
+[36] Y. Chen, Y. Lin, J. Huang, X. Gong, Z. Luo, Y. Huang, Spectroscopic and laser 
+properties of Er3 + :Yb3 + :LuAl3(BO3)4 crystal at 1.5-1.6 µ m, Opt. Express 18 (13) 
+(2010) 13700 – 13707, https://doi.org/10.1364/OE.18.013700 . 
+[37] Y.T. Wang, R.H. Zhang, Comprehensive analysis of heat generation and efficient 
+measurement of fractional thermal loading in a solid-state laser medium, Laser 
+Phys. 27 (12) (2017), https://doi.org/10.1088/1555-6611/aa8b54 . 
+[38] X. Tian, B. Qi, Heat accumulated at end faces of Nd:YAG laser crystal transferred by 
+air and its effect on temperature field of the crystal, Optik 203 (2020), https://doi. 
+org/10.1016/j.ijleo.2019.163286 . 
+[39] Solid-State Laser Engineering, Springer, New York, NY, 2006. Doi: 10.1007/0-387- 
+29338-8. 
+[40] Q. Liu, X. Fu, M. Gong, L. Huang, Effects of the temperature dependence of 
+absorption coefficients in edge-pumped Yb:YAG slab lasers, J. Opt. Soc. Am. B 24 
+(9) (2007) 2081, https://doi.org/10.1364/JOSAB.24.002081 . 
+[41] S. Toroghi, A. Khayyat Jafari, A. Golpayegani, The effect of temperature on 
+absorption in end-pumped Yb:YAG thin disk lasers, Opt. Laser Technol. 41 (2009) 
+800 – 803, https://doi.org/10.1016/j.optlastec.2008.12.004 . 
+[42] Y. Chen, F. Lin, H. Yang, E. Ma, Y. Lin, J. Huang, X. Gong, Z. Luo, Y. Huang, 
+Temperature dependence of the spectroscopic properties of Er:Yb:YAl3(BO3)4 
+crystal between 300 – 800 K, OSA, Continuum 2 (3) (2019), https://doi.org/ 
+10.1364/osac.2.000615 . 
+[43] F.R. Laughton, J.H. Marsh, J.S. Roberts, Intuitive model to include the effect of 
+free-carrier absorption in calculating the two-photon absorption coefficient, Appl. 
+Phys. Lett. 60 (2) (1992) 166 – 168, https://doi.org/10.1063/1.106980 . 
+[44] C. Li, Nonlinear optics, Springer Singapore (2017), https://doi.org/10.1007/978- 
+981-10-1488-8 . 
+[45] C.-H. Liu, B.-R. Xu, Theoretical study of the optical absorption and refraction index 
+change in a cylindrical quantum dot, Phys. Lett. A 372 (6) (2008) 888 – 892, 
+https://doi.org/10.1016/j.physleta.2007.08.046 . 
+[46] A. Doyeol, C. Shun-lien, Calculation of linear and nonlinear intersubband optical 
+absorptions in a quantum well model with an applied electric field, IEEE J. 
+Quantum Electron. 23 (12) (1987) 2196 – 2204, https://doi.org/10.1109/ 
+jqe.1987.1073280 . 
+[47] T. Takagahara, Biexciton states in semiconductor quantum dots and their nonlinear 
+optical properties, Phys. Rev. B 39 (14) (1989) 10206 – 10231, https://doi.org/ 
+10.1103/PhysRevB.39.10206 . 
+W. Fu et al.                                                                                                                                                                                                                                      
